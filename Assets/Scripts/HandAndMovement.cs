@@ -22,10 +22,7 @@ public class HandAndMovement : MonoBehaviour
         //basedController = GameObject.FindObjectOfType<ActionBasedController>();
     }
 
-    public void LoadNextScene()
-    {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+    
 
     public void Lefthander()
     {
