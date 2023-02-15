@@ -6,8 +6,6 @@ TagManager:
   tags:
   - LeftHand
   - RightHand
-  - LeftHandTeleportInteractor
-  - RightHandTeleportInteractor
   layers:
   - Default
   - TransparentFX

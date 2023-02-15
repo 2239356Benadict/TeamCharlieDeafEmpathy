@@ -17,37 +17,25 @@ public class HandAndMovement : MonoBehaviour
     public ActionBasedControllerManager leftHandControllerManager;
     public ActionBasedControllerManager rightHandControllerManager;
 
-    [SerializeField]
-    private GameObject leftXRRayInteractorGO;
-    private XRRayInteractor leftXRRayInteractor;
-    [SerializeField]
-    private GameObject rightXRRayInteractorGO;
-    private XRRayInteractor rightXRRayInteractor;
-
-
     private void Start()
     {
         //basedController = GameObject.FindObjectOfType<ActionBasedController>();
-        leftXRRayInteractorGO = GameObject.FindGameObjectWithTag("LeftHandTeleportInteractor");
-        rightXRRayInteractorGO = GameObject.FindGameObjectWithTag("RightHandTeleportInteractor");
     }
 
     
-    // Method to set Left hand as dominant hand
+
     public void Lefthander()
     {
         leftHandUser = true;
         righttHandUser = false;
     }
 
-    // Method to set Right hand as dominant hand
     public void Righthander()
     {
         righttHandUser = true;
         leftHandUser = false;
     }
 
-    //Method to enable only continuous movement
     public void HandContinuusMovementType()
     {
         continuousMotion = true;
@@ -65,8 +53,6 @@ public class HandAndMovement : MonoBehaviour
             rightHandControllerManager.CancelTeleportationMovement();
         }
     }
-
-    // Method to enable only teleport movement
     public void HandTeleportationMovementType()
     {
         continuousMotion = false;
@@ -74,13 +60,18 @@ public class HandAndMovement : MonoBehaviour
         if (leftHandUser)
         {
             leftHandControllerManager.smoothMotionEnabled = false;
-            rightXRRayInteractor.enabled = false;
+            
         }
         else if (righttHandUser)
         {
             rightHandControllerManager.smoothMotionEnabled = false;
-            leftXRRayInteractor.enabled = false;
         }
     }
 
+    public void HandMovementType()
+    {
+        if (leftHandUser)
+        {
+        }
+    }
 }
