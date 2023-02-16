@@ -93,6 +93,7 @@ public class LoadNextScene : MonoBehaviour
                 progressSlideBar.value = 1;
                 sceneLoad.allowSceneActivation = true;
                 FadeIn();
+                loadingBar.SetActive(false);
             }
             yield return null;
         }       
