@@ -69,7 +69,7 @@ public class LoadNextScene : MonoBehaviour
 
     public void LoadNextSceneSmoothly()
     {
-        AsyncOperation sceneLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        //AsyncOperation sceneLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         StartCoroutine(LoadingSceneSmoothly());
     }
 
@@ -92,6 +92,8 @@ public class LoadNextScene : MonoBehaviour
             {
                 progressSlideBar.value = 1;
                 sceneLoad.allowSceneActivation = true;
+                FadeIn();
+                loadingBar.SetActive(false);
             }
             yield return null;
         }       

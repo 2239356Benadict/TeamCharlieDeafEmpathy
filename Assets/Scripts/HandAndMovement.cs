@@ -13,15 +13,15 @@ public class HandAndMovement : MonoBehaviour
     public bool continuousMotion;
     public bool teleportMovement;
 
-    //public ActionBasedController basedController;
     public ActionBasedControllerManager leftHandControllerManager;
     public ActionBasedControllerManager rightHandControllerManager;
 
+
+
     private void Start()
     {
-        //basedController = GameObject.FindObjectOfType<ActionBasedController>();
+        
     }
-
     
 
     public void Lefthander()
@@ -45,33 +45,30 @@ public class HandAndMovement : MonoBehaviour
             leftHandControllerManager.smoothMotionEnabled = true;
             rightHandControllerManager.smoothMotionEnabled = false;
             leftHandControllerManager.CancelTeleportationMovement();
+
         }
         else if (righttHandUser)
         {
             rightHandControllerManager.smoothMotionEnabled = true;
             leftHandControllerManager.smoothMotionEnabled = false;
             rightHandControllerManager.CancelTeleportationMovement();
+
         }
     }
     public void HandTeleportationMovementType()
     {
         continuousMotion = false;
         teleportMovement = true;
-        if (leftHandUser)
+        if (leftHandUser || righttHandUser)
         {
             leftHandControllerManager.smoothMotionEnabled = false;
-            
+            rightHandControllerManager.smoothMotionEnabled = false;
         }
         else if (righttHandUser)
         {
             rightHandControllerManager.smoothMotionEnabled = false;
+
         }
     }
 
-    public void HandMovementType()
-    {
-        if (leftHandUser)
-        {
-        }
-    }
 }
