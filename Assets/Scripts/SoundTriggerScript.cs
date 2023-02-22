@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class SoundTriggerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioSource audiosource;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player" && !audiosource.isPlaying)
+        {
+            audiosource.Play();
+        }
     }
 }
