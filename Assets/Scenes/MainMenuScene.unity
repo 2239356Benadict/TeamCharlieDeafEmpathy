@@ -1758,7 +1758,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: b445a392b58364b4db77cfb68d85f9b7,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 52261a777d123d241a6aa5869e7e006f, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: b445a392b58364b4db77cfb68d85f9b7, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: b445a392b58364b4db77cfb68d85f9b7, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3623,7 +3623,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: 9b0bf2e244902184cba2ae877f4bb37e,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: aacc78d695f26094987e1382fd77c7d6, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 9b0bf2e244902184cba2ae877f4bb37e, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 9b0bf2e244902184cba2ae877f4bb37e, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -4318,6 +4318,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4259548117460404135, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4367318598655600257, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -4333,10 +4338,20 @@ PrefabInstance:
       propertyPath: m_SmoothMotionEnabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5943189913811301960, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023688830318808332, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966226065256375721, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -7699,7 +7714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71632661abe01c409dbd681dea1403b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handStatus: {fileID: 0}
+  handStatus: {fileID: 924641090}
   teleportMovementStatus: 0
   isLeftDominantHand: 0
   isRightDominantHand: 0
