@@ -17,6 +17,7 @@ public class XRRigStatus : MonoBehaviour
     {
         hospitalTeleportArea = GameObject.FindObjectOfType<TeleportationArea>();
         xRRigStatus = GameObject.FindObjectOfType<CheckXRRigStatus>();
+        Debug.Log("New Scene Loaded");
     }
 
     private void Start()
