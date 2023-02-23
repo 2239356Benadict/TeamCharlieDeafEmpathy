@@ -8,6 +8,10 @@ TagManager:
   - RightHand
   - LeftTeleportInteractor
   - RightTeleportInteractor
+  - DoctorTargetArea
+  - NPC1
+  - NPCDestroyer
+  - ReceptionAreaForDoc
   layers:
   - Default
   - TransparentFX
