@@ -51,19 +51,6 @@ public class FollowThePath : MonoBehaviour
         destPoint = (destPoint + 1); //% points.Length;
     }
     
-    //void GoToPreviousPoint()
-    //{
-    //    // Returns if no points have been set up
-    //    if (points.Length == 0)
-    //        return;
-
-    //    // Set the agent to go to the currently selected destination.
-    //    agent.destination = points[destPoint].position;
-
-    //    // Choose the next point in the array as the destination,
-    //    // cycling to the start if necessary.
-    //    destPoint = (destPoint - 1);
-    //}
 
 
     void Update()
@@ -82,7 +69,6 @@ public class FollowThePath : MonoBehaviour
     public void DestroyTheNPC()
     {
             Destroy(this.gameObject);
-            Debug.Log(destPoint.ToString());
-       
+            Debug.Log(destPoint.ToString());  
     }
 }
