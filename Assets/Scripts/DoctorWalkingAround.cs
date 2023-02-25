@@ -7,13 +7,19 @@ public class DoctorWalkingAround : MonoBehaviour
 {
     public Transform[] points;
     public Transform wayback;
-    private int destPoint = 0;
+
     private NavMeshAgent agent;
+
     public Animator doctorAnimator;
     public AnimationClip[] doctorAnimationClip;
+
+    private int destPoint = 0;
     public float doctorWalkingRepeatTime;
-    public bool isGoingBack;
+    public int numberOfTimes;
+
+    public bool isGoneBack;
     public bool isAtReceptionArea;
+    public bool canNPCFollow;
     //public Animation nPCAnimation;
 
     void Start()
@@ -22,9 +28,9 @@ public class DoctorWalkingAround : MonoBehaviour
 
         agent.autoBraking = false;
         isAtReceptionArea = false;
+        canNPCFollow = false;
+
         InvokeRepeating("WalkAround", 1, doctorWalkingRepeatTime);
-        
-        //GotoNextPoint();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,8 +44,13 @@ public class DoctorWalkingAround : MonoBehaviour
         else if (other.tag == "DoctorDesk")
         {
             isAtReceptionArea = false;
-            isGoingBack = true;
-
+            isGoneBack = true;
+        }
+        else if (other.tag == "NPCStarter")
+        {
+            canNPCFollow = true;
+            //numberOfTimes++;
+            Debug.Log("No Times" + numberOfTimes);
         }
     }
     void GotoNextPoint()
@@ -71,23 +82,11 @@ public class DoctorWalkingAround : MonoBehaviour
             doctorAnimator.Play("Walking");
             agent.destination = wayback.position;
             isAtReceptionArea = false;
-            isGoingBack = true;
+            isGoneBack = true;
         }
         yield return new WaitForSeconds(1);
 
         Debug.Log("Doctor is walking between two points");
     }
-    void Update()
-    {
 
-        // Choose the next destination point when the agent gets
-        // close to the current one.
-        //if (!agent.pathPending && agent.remainingDistance < 0.5f && !reachedReceptionArea)
-            //GotoNextPoint();
-
-        //if (reachedReceptionArea)
-        //{
-        //    agent.destination = wayback.position;
-        //}
-    }
 }

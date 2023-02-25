@@ -6,14 +6,19 @@ using UnityEngine.AI;
 public class FollowThePath : MonoBehaviour
 {
     public Transform[] points;
+
     private int destPoint = 0;
+
     private NavMeshAgent agent;
+
     public Animator nPCAnimator;
     public AnimationClip[] nPCAnimationClip;
 
+    public bool startFollowing;
+
     private void Awake()
     {
-        this.enabled = false;
+        //this.enabled = false;
 
     }
     void Start()
@@ -23,14 +28,13 @@ public class FollowThePath : MonoBehaviour
         agent.autoBraking = false;
 
         GotoNextPoint();
-
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if(other.tag == "DoctorTargetArea")
         {
-            EnableScript();
+            //EnableScript();
         }
         else if(other.tag == "NPCDestroyer")
         {
@@ -48,7 +52,7 @@ public class FollowThePath : MonoBehaviour
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
-        destPoint = (destPoint + 1); //% points.Length;
+        destPoint = (destPoint + 1 )% points.Length;
     }
     
 
@@ -57,8 +61,9 @@ public class FollowThePath : MonoBehaviour
     {
         // Choose the next destination point when the agent gets
         // close to the current one.
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
-            GotoNextPoint();
+        //if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        //GotoNextPoint();
+        StartWalking();
     }
 
     public void EnableScript()
@@ -66,6 +71,14 @@ public class FollowThePath : MonoBehaviour
         this.enabled = true;
     }
 
+    public void StartWalking()
+    {
+        if (startFollowing)
+        {
+            if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        GotoNextPoint();
+        }
+    }
     public void DestroyTheNPC()
     {
             Destroy(this.gameObject);

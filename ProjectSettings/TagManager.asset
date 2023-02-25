@@ -12,6 +12,7 @@ TagManager:
   - NPC1
   - NPCDestroyer
   - ReceptionAreaForDoc
+  - NPCStarter
   layers:
   - Default
   - TransparentFX
