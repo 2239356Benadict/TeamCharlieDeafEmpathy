@@ -7,20 +7,23 @@ public class DoctorWalkingAround : MonoBehaviour
 {
     public Transform[] points;
     public Transform wayback;
-
+    public GameObject followDoctorCheckpoint;
+    
     private NavMeshAgent agent;
 
     public Animator doctorAnimator;
     public AnimationClip[] doctorAnimationClip;
+    public AnimationClip doctorAnimationClipLength;
+    //public Animation nPCAnimation;
 
     private int destPoint = 0;
-    public float doctorWalkingRepeatTime;
     public int numberOfTimes;
+    public float doctorWalkingRepeatTime;
+    public float receptionWaitingTime;
 
     public bool isGoneBack;
     public bool isAtReceptionArea;
     public bool canNPCFollow;
-    //public Animation nPCAnimation;
 
     void Start()
     {
@@ -29,7 +32,8 @@ public class DoctorWalkingAround : MonoBehaviour
         agent.autoBraking = false;
         isAtReceptionArea = false;
         canNPCFollow = false;
-
+        followDoctorCheckpoint.SetActive(false);
+        // invoke the doctors to and fro movement
         InvokeRepeating("WalkAround", 1, doctorWalkingRepeatTime);
     }
 
@@ -38,20 +42,30 @@ public class DoctorWalkingAround : MonoBehaviour
         if(other.tag == "ReceptionAreaForDoc")
         {
             isAtReceptionArea = true;
+            isGoneBack = true;
+
             doctorAnimator.Play("Talking");
-            Debug.Log("Collided with NPC");
+
+            followDoctorCheckpoint.SetActive(true);
         }
         else if (other.tag == "DoctorDesk")
         {
             isAtReceptionArea = false;
             isGoneBack = true;
+            canNPCFollow = false;
+            followDoctorCheckpoint.SetActive(false);
         }
-        else if (other.tag == "NPCStarter")
+        else if (other.tag == "FollowDoctor")   //"NPCStarter"
         {
             canNPCFollow = true;
-            //numberOfTimes++;
-            Debug.Log("No Times" + numberOfTimes);
+            
+            Debug.Log("FollowDoc");
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        
     }
     void GotoNextPoint()
     {
@@ -78,7 +92,7 @@ public class DoctorWalkingAround : MonoBehaviour
         yield return new WaitForSeconds(5);
         if (isAtReceptionArea)
         {
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(receptionWaitingTime);
             doctorAnimator.Play("Walking");
             agent.destination = wayback.position;
             isAtReceptionArea = false;

@@ -26,7 +26,7 @@ public class FollowThePath : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         agent.autoBraking = false;
-
+        nPCAnimator = gameObject.GetComponent<Animator>();
         GotoNextPoint();
     }
 
@@ -49,7 +49,7 @@ public class FollowThePath : MonoBehaviour
 
         // Set the agent to go to the currently selected destination.
         agent.destination = points[destPoint].position;
-
+        transform.LookAt(points[destPoint]);
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
         destPoint = (destPoint + 1 )% points.Length;
@@ -76,9 +76,15 @@ public class FollowThePath : MonoBehaviour
         if (startFollowing)
         {
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
-        GotoNextPoint();
+            GotoNextPoint();
+            
+            nPCAnimator.Play("Walk");
         }
     }
+
+    /// <summary>
+    /// Destroy the game object attached with this script
+    /// </summary>
     public void DestroyTheNPC()
     {
             Destroy(this.gameObject);

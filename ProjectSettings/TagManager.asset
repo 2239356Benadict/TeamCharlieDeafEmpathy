@@ -13,6 +13,8 @@ TagManager:
   - NPCDestroyer
   - ReceptionAreaForDoc
   - NPCStarter
+  - FollowDoctor
+  - DoctorDesk
   layers:
   - Default
   - TransparentFX

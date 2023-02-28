@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject doctorNPC;
     public GameObject doctorPassCheckpoint;
+    
     public GameObject[] patientsArray;
 
     [SerializeField]
@@ -16,27 +17,28 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         doctor = doctorNPC.GetComponent<DoctorWalkingAround>();
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "DoctorTargetArea")
         {
-            nPCToMove++;
+            //nPCToMove++;
             NPCWalkingController();
         }
     }
     public void NPCWalkingController()
     {
-        if (doctor.canNPCFollow)
+        if (doctor.canNPCFollow && nPCToMove <= patientsArray.Length)
         {
             //nPCToMove = doctor.numberOfTimes;
 
-                patientsArray[nPCToMove-1].GetComponent<FollowThePath>().startFollowing = true;
-                Debug.Log("For Loop" + patientsArray[nPCToMove-1].GetComponent<FollowThePath>().startFollowing);
-                doctor.canNPCFollow = false;
-                doctorPassCheckpoint.GetComponent<BoxCollider>().isTrigger = true;
-            nPCToMove--;
+            nPCToMove++;
+            patientsArray[nPCToMove - 1].GetComponent<FollowThePath>().startFollowing = true;
+            Debug.Log("For Loop" + patientsArray[nPCToMove - 1].GetComponent<FollowThePath>().startFollowing);
+            doctor.canNPCFollow = false;
+            doctorPassCheckpoint.GetComponent<BoxCollider>().isTrigger = true;
         }
 
         if (doctor.isGoneBack)
