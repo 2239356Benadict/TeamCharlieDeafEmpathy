@@ -547,7 +547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6879bdc28d0414aa5fc16fd5b8c813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
 --- !u!1 &184224504
 GameObject:
@@ -3362,6 +3361,11 @@ PrefabInstance:
       propertyPath: MinDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7575170085424163414, guid: 04d05a5c6e987bb4ca4e71ff21f68115,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bfe169a2ed1d864699bf156d21a9122, type: 3}
     - target: {fileID: 7575170085424163419, guid: 04d05a5c6e987bb4ca4e71ff21f68115,
         type: 3}
       propertyPath: m_LocalPosition.x
