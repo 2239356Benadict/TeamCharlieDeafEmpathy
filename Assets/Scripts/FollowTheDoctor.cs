@@ -6,7 +6,6 @@ public class FollowTheDoctor : MonoBehaviour
 {
     public Transform objectToFollow; // object to follow by manikin
 
-    //public XRRigMovement xRRigMovement; // XR rigmovement script
 
     public bool isGathered; // bool to check whether manikin found XR Rig
 
@@ -21,21 +20,13 @@ public class FollowTheDoctor : MonoBehaviour
     [SerializeField]
     private Animator avatarAnimator; // manikin animator
 
-    //[SerializeField]
-    //private ManikinHealth _manikinHealth; // manikin health script
 
-    //public LayerMask obstacleLayer;
-
-    //public GameObject seatPosition; // position for manikin to sit
     public bool enteredDoctorArea; // bool for entering helicopter area
 
 
     #region Monobehaviour Methods
     void Start()
     {
-        //objectToFollow = GameObject.FindGameObjectWithTag("XRrig").GetComponent<Transform>();
-
-        //xRRigMovement = GameObject.FindGameObjectWithTag("XRrig").GetComponent<XRRigMovement>();
         avatarAnimator = gameObject.GetComponent<Animator>();
         isGathered = false;
         enteredDoctorArea = false;
@@ -132,13 +123,11 @@ public class FollowTheDoctor : MonoBehaviour
                 avatarAnimator.Play("Walking");  // playing animation Walking
                 // moving manikin towards player
                 transform.position = Vector3.MoveTowards(transform.position, objectToFollow.transform.position, _speed);
-
             }
             else
             {
                 _speed = 0f;
                 avatarAnimator.Play("Idle");   // playing idle animation
-
             }
         }
     }
