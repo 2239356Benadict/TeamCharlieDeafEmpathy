@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerSpawnPoint : MonoBehaviour
 {
-    public Vector3 spawnPosition;
     public GameObject player;
 
     public void Awake()
