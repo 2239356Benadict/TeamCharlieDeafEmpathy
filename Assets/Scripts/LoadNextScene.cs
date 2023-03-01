@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LoadNextScene : MonoBehaviour
 {
 
+    public GameObject player;
     public GameObject loadingBar;
     public Slider progressSlideBar;
 
@@ -69,8 +70,8 @@ public class LoadNextScene : MonoBehaviour
 
     public void LoadNextSceneSmoothly()
     {
-        //AsyncOperation sceneLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        StartCoroutine(LoadingSceneSmoothly());
+        AsyncOperation sceneLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        //StartCoroutine(LoadingSceneSmoothly());
     }
 
     public IEnumerator LoadingSceneSmoothly()
