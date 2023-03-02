@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &386718534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 386718536}
+  - component: {fileID: 386718535}
+  - component: {fileID: 386718537}
+  m_Layer: 0
+  m_Name: DoctorsRoomCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &386718536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386718534}
+  m_LocalRotation: {x: 0.00000000279305, y: -0.71274424, z: -0.000000029671153, w: 0.701424}
+  m_LocalPosition: {x: 2.063, y: 0.488, z: 3.653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8010582690922441150}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &386718535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386718534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.55, y: 1.04, z: 4.65}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &386718537
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386718534}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &691959958363211790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,14 +1332,7 @@ PrefabInstance:
     - target: {fileID: 2084891752449158085, guid: 5dc855182cd01134c85a79a2f3275ee3,
         type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'Bip01 L UpperArm'\n\tTransform 'Bip01 R
-        Finger31'\n\tTransform 'Bip01 L Finger01'\n\tTransform 'Bip01 R UpperArm'\n\tTransform
-        'Bip01 L Finger21'\n\tTransform 'Bip01 R Finger11'\n\tTransform 'Bip01 Head'\n\tTransform
-        'Bip01 L Finger02'\n\tTransform 'Bip01 L Finger12'\n\tTransform 'Bip01 L
-        Finger22'\n\tand more ...\n\tFrom animation clip 'Standing Idle'\n\tFrom
-        animation clip 'Cough'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4703159307205749509, guid: 5dc855182cd01134c85a79a2f3275ee3,
         type: 3}
@@ -1357,13 +1412,7 @@ PrefabInstance:
     - target: {fileID: 961798431905747745, guid: 193b7f8302aa40944a430bdc0db48b80,
         type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'Bip01 L UpperArm'\n\tTransform 'Bip01 R
-        Finger31'\n\tTransform 'Bip01 L Finger01'\n\tTransform 'Bip01 R UpperArm'\n\tTransform
-        'Bip01 L Finger21'\n\tTransform 'Bip01 R Finger11'\n\tTransform 'Bip01 L
-        Foot'\n\tTransform 'Bip01 Head'\n\tTransform 'Bip01 L Finger02'\n\tTransform
-        'Bip01 L Finger12'\n\tand more ...\n\tFrom animation clip 'Touch Face'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5833009154616759265, guid: 193b7f8302aa40944a430bdc0db48b80,
         type: 3}
@@ -1598,17 +1647,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6112a812117c2614d8c44b86727cd849,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.49
+      value: 4.453
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6112a812117c2614d8c44b86727cd849,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -0.011
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6112a812117c2614d8c44b86727cd849,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.58
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6112a812117c2614d8c44b86727cd849,
         type: 3}
@@ -1650,6 +1699,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medical_Male_01_facial
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6112a812117c2614d8c44b86727cd849,
+        type: 3}
+      propertyPath: m_TagString
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6112a812117c2614d8c44b86727cd849,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 518db81611fad74429fee7e5ee8b60a7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6112a812117c2614d8c44b86727cd849, type: 3}
 --- !u!4 &121754838072802350 stripped
@@ -1658,6 +1717,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7539579923752439381}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7232954927916741380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6112a812117c2614d8c44b86727cd849,
+    type: 3}
+  m_PrefabInstance: {fileID: 7539579923752439381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1808674704
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954927916741380}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1808674703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954927916741380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1808674705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954927916741380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac277d710f176c4989020b24c23cb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  DoctorsRoomCollider: {fileID: 386718535}
 --- !u!4 &8010582690922441150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6112a812117c2614d8c44b86727cd849,
@@ -2009,6 +2117,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!65 &1144549061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954926280399408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.51, y: 0.57, z: 4.81}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1144549060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954926280399408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652e24da87f29584fb9a366d7622f11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  npcCollider: {fileID: 0}
+--- !u!114 &1144549062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232954926280399408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bdd2d8eeaa99a40a6cfbf9bd0e3bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  npcCollider: {fileID: 0}
 --- !u!4 &8010582689372078218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a25ca0dd8d9feb4fa0b133b1bb3e0e0,
