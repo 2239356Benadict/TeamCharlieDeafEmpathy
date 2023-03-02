@@ -32,8 +32,7 @@ public class GameManager : MonoBehaviour
     {
         if (doctor.canNPCFollow && nPCToMove <= patientsArray.Length)
         {
-            //nPCToMove = doctor.numberOfTimes;
-
+            //nPCToMove = doctor.numberOfNPCDone;
             nPCToMove++;
             patientsArray[nPCToMove - 1].GetComponent<FollowThePath>().startFollowing = true;
             Debug.Log("For Loop" + patientsArray[nPCToMove - 1].GetComponent<FollowThePath>().startFollowing);

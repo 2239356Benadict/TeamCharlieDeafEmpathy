@@ -17,7 +17,9 @@ public class DoctorWalkingAround : MonoBehaviour
     //public Animation nPCAnimation;
 
     private int destPoint = 0;
-    public int numberOfTimes;
+    public int numberOfNPCDone;
+    public int timerValue;
+    public int doctorWaitingTime;
     public float doctorWalkingRepeatTime;
     public float receptionWaitingTime;
 
@@ -42,8 +44,8 @@ public class DoctorWalkingAround : MonoBehaviour
         if(other.tag == "ReceptionAreaForDoc")
         {
             isAtReceptionArea = true;
-            isGoneBack = true;
-
+            isGoneBack = false;
+            numberOfNPCDone++;
             doctorAnimator.Play("Talking");
 
             followDoctorCheckpoint.SetActive(true);
@@ -60,6 +62,22 @@ public class DoctorWalkingAround : MonoBehaviour
             canNPCFollow = true;
             
             Debug.Log("FollowDoc");
+        }
+        else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 4)
+        {
+            isAtReceptionArea = true;
+            isGoneBack = true;
+            numberOfNPCDone++;
+            if (timerValue < doctorWaitingTime)
+            {
+                doctorAnimator.Play("Idle");
+            }
+            else
+            {
+                WalkAround();
+            }
+
+            followDoctorCheckpoint.SetActive(true);
         }
     }
 

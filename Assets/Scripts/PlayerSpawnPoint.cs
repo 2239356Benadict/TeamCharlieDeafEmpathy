@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using System.Collections;
 
 public class PlayerSpawnPoint : MonoBehaviour
 {
@@ -12,5 +14,7 @@ public class PlayerSpawnPoint : MonoBehaviour
     {
         player.GetComponent<Transform>().position = gameObject.transform.position;
     }
+
+
 }
 

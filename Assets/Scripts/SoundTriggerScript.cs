@@ -2,14 +2,79 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SoundTriggerScript : MonoBehaviour
 {
+    public int delayAudioPlay;
+    public int timesPlayerEnetered;
+    public int timesPlayerEneteredSeat;
+
     public AudioSource audiosource;
+    public AudioClip[] audioClip;
+
+    public bool isOneShotAudioPlay;
+
+    private void Start()
+    {
+        audiosource = gameObject.GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !audiosource.isPlaying)
+        if (other.tag == "Player" && !audiosource.isPlaying && !isOneShotAudioPlay)
         {
-            audiosource.Play();
+            StartCoroutine(playAudioInstruction());
+        }
+        else if(other.tag == "Player" && this.gameObject.tag == "ReceptionArea" && !isOneShotAudioPlay)
+        {
+            // For the collider at reception area
+            timesPlayerEnetered++;
+            StartCoroutine(playAudioInstructionAndDisable());    
+        }
+        else if(other.tag == "Player" && !audiosource.isPlaying && isOneShotAudioPlay)
+        {
+            timesPlayerEneteredSeat++;
+            StartCoroutine(PlayAudioOneTime(0));
+            //Rigidbody otherGORigidBody = other.GetComponent<Rigidbody>();
+            //Debug.Log("Rigid Body Name: " + otherGORigidBody.name);
+            Debug.Log(timesPlayerEneteredSeat);
+            //if (timesPlayerEneteredSeat == 2)
+            //{
+            //    otherGORigidBody.constraints = RigidbodyConstraints.FreezeAll;
+            //    otherGORigidBody.velocity = Vector3.zero;
+            //    otherGORigidBody.velocity = Vector3.zero;
+            //}
         }
     }
+
+
+    // Normal audio play
+    IEnumerator playAudioInstruction()
+    {
+        yield return new WaitForSeconds(1);
+        audiosource.PlayOneShot(audioClip[0]);
+    }
+
+    /// <summary>
+    /// Trigger audio after certain times
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator playAudioInstructionAndDisable()
+    {
+        yield return new WaitForSeconds(delayAudioPlay);
+        // For the collider at reception area
+        if (timesPlayerEnetered == 2)
+        {
+            audiosource.PlayOneShot(audioClip[0]);
+        }
+    }
+
+    IEnumerator PlayAudioOneTime(int audioNumber)
+    {
+        audiosource.PlayOneShot(audioClip[audioNumber]);
+        yield return new WaitForSeconds(audioClip[audioNumber].length);
+        audiosource.enabled = false;
+        Debug.Log("Playing One Shot function");
+    }
+
+  
 }

@@ -1,0 +1,1254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &329609715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329609716}
+  - component: {fileID: 329609717}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329609716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329609715}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.20650482, y: 0.733, z: 5.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &329609717
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329609715}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 9.828795, y: 10, z: 5.2375736}
+  m_BoxOffset: {x: -0.16831446, y: 0, z: 0.23909962}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &481290903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481290904}
+  - component: {fileID: 481290905}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481290904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481290903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.71, y: 1.072, z: 12.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &481290905
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481290903}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 5.8416204, y: 10, z: 6.332965}
+  m_BoxOffset: {x: -0.143332, y: 0, z: 0.0338701}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &770663495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770663496}
+  - component: {fileID: 770663497}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770663496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770663495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.78, y: 0.969, z: 5.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &770663497
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770663495}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 7.72363, y: 10, z: 8.03021}
+  m_BoxOffset: {x: 0.15870762, y: 0, z: 0.021361828}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &969322792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969322793}
+  - component: {fileID: 969322794}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969322793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969322792}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.78, y: 1.114, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &969322794
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969322792}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 7.532847, y: 10, z: 4.3504066}
+  m_BoxOffset: {x: 0.06331611, y: 0, z: 0.14093876}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1552986307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552986308}
+  - component: {fileID: 1552986309}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1552986308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552986307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.39, y: 1.115, z: 4.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1552986309
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552986307}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 3.5307693, y: 10, z: 12.411051}
+  m_BoxOffset: {x: -0.040029526, y: 0, z: -0.8960819}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1681590891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681590893}
+  - component: {fileID: 1681590892}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1681590893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681590891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.879136, y: -1.6651593, z: -24.805136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 329609716}
+  - {fileID: 1916009688}
+  - {fileID: 1552986308}
+  - {fileID: 481290904}
+  - {fileID: 1757189440}
+  - {fileID: 770663496}
+  - {fileID: 969322793}
+  - {fileID: 2133684168}
+  m_Father: {fileID: 2752209123124734621}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1681590892
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681590891}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 9.777726, y: 10, z: 6.1695576}
+  m_BoxOffset: {x: -0.3920684, y: 0, z: 0.10819912}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1757189439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757189440}
+  - component: {fileID: 1757189441}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1757189440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757189439}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.12, y: 1.489, z: 12.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1757189441
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757189439}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 9.719817, y: 10, z: 6.454638}
+  m_BoxOffset: {x: 0.3003373, y: 0, z: 0.094706774}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1916009687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916009688}
+  - component: {fileID: 1916009689}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916009688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916009687}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.37, y: 1.147, z: 12.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1916009689
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916009687}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 15.025119, y: 10, z: 7.2893476}
+  m_BoxOffset: {x: 0.36752272, y: 0, z: -0.28984642}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &2099310276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099310278}
+  - component: {fileID: 2099310277}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099310278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099310276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.6708646, y: -3.0351593, z: -28.355137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2752209123124734621}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &2099310277
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099310276}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 1, y: 3.53589, z: 20.618717}
+  - {x: 1, y: 3.53589, z: -1}
+  - {x: 1, y: -1, z: 20.618717}
+  - {x: 1, y: -1, z: -1}
+  - {x: -32.023094, y: 3.53589, z: 20.618717}
+  - {x: -32.023094, y: 3.53589, z: -1}
+  - {x: -32.023094, y: -1, z: 20.618717}
+  - {x: -32.023094, y: -1, z: -1}
+  - {x: 1, y: 1, z: 20.618717}
+  - {x: 1, y: 1, z: -1}
+  - {x: -32.023094, y: 1, z: 20.618717}
+  - {x: -32.023094, y: 1, z: -1}
+  - {x: 1, y: 2.2763734, z: 20.618717}
+  - {x: 1, y: 2.2763734, z: -1}
+  - {x: -32.023094, y: 2.2763734, z: 20.618717}
+  - {x: -32.023094, y: 2.2763734, z: -1}
+  - {x: -1, y: 3.53589, z: 20.618717}
+  - {x: -1, y: 3.53589, z: -1}
+  - {x: -1, y: -1, z: 20.618717}
+  - {x: -1, y: -1, z: -1}
+  - {x: -1, y: 1, z: 20.618717}
+  - {x: -1, y: 1, z: -1}
+  - {x: -1, y: 2.2763734, z: 20.618717}
+  - {x: -1, y: 2.2763734, z: -1}
+  - {x: -2.9938588, y: 3.53589, z: 20.618717}
+  - {x: -2.9938588, y: 3.53589, z: -1}
+  - {x: -2.9938588, y: -1, z: 20.618717}
+  - {x: -2.9938588, y: -1, z: -1}
+  - {x: -2.9938588, y: 1, z: 20.618717}
+  - {x: -2.9938588, y: 1, z: -1}
+  - {x: -2.9938588, y: 2.2763734, z: 20.618717}
+  - {x: -2.9938588, y: 2.2763734, z: -1}
+  - {x: -5.1005173, y: 3.53589, z: 20.618717}
+  - {x: -5.1005173, y: 3.53589, z: -1}
+  - {x: -5.1005173, y: -1, z: 20.618717}
+  - {x: -5.1005173, y: -1, z: -1}
+  - {x: -5.1005173, y: 1, z: 20.618717}
+  - {x: -5.1005173, y: 1, z: -1}
+  - {x: -5.1005173, y: 2.2763734, z: 20.618717}
+  - {x: -5.1005173, y: 2.2763734, z: -1}
+  - {x: -7.3482957, y: 3.53589, z: 20.618717}
+  - {x: -7.3482957, y: 3.53589, z: -1}
+  - {x: -7.3482957, y: -1, z: 20.618717}
+  - {x: -7.3482957, y: -1, z: -1}
+  - {x: -7.3482957, y: 1, z: 20.618717}
+  - {x: -7.3482957, y: 1, z: -1}
+  - {x: -7.3482957, y: 2.2763734, z: 20.618717}
+  - {x: -7.3482957, y: 2.2763734, z: -1}
+  - {x: -9.863506, y: 3.53589, z: 20.618717}
+  - {x: -9.863506, y: 3.53589, z: -1}
+  - {x: -9.863506, y: -1, z: 20.618717}
+  - {x: -9.863506, y: -1, z: -1}
+  - {x: -9.863506, y: 1, z: 20.618717}
+  - {x: -9.863506, y: 1, z: -1}
+  - {x: -9.863506, y: 2.2763734, z: 20.618717}
+  - {x: -9.863506, y: 2.2763734, z: -1}
+  - {x: -12.42024, y: 3.53589, z: 20.618717}
+  - {x: -12.42024, y: 3.53589, z: -1}
+  - {x: -12.42024, y: -1, z: 20.618717}
+  - {x: -12.42024, y: -1, z: -1}
+  - {x: -12.42024, y: 1, z: 20.618717}
+  - {x: -12.42024, y: 1, z: -1}
+  - {x: -12.42024, y: 2.2763734, z: 20.618717}
+  - {x: -12.42024, y: 2.2763734, z: -1}
+  - {x: -15.198395, y: 3.53589, z: 20.618717}
+  - {x: -15.198395, y: 3.53589, z: -1}
+  - {x: -15.198395, y: -1, z: 20.618717}
+  - {x: -15.198395, y: -1, z: -1}
+  - {x: -15.198395, y: 1, z: 20.618717}
+  - {x: -15.198395, y: 1, z: -1}
+  - {x: -15.198395, y: 2.2763734, z: 20.618717}
+  - {x: -15.198395, y: 2.2763734, z: -1}
+  - {x: -18.02726, y: 3.53589, z: 20.618717}
+  - {x: -18.02726, y: 3.53589, z: -1}
+  - {x: -18.02726, y: -1, z: 20.618717}
+  - {x: -18.02726, y: -1, z: -1}
+  - {x: -18.02726, y: 1, z: 20.618717}
+  - {x: -18.02726, y: 1, z: -1}
+  - {x: -18.02726, y: 2.2763734, z: 20.618717}
+  - {x: -18.02726, y: 2.2763734, z: -1}
+  - {x: -20.894623, y: 3.53589, z: 20.618717}
+  - {x: -20.894623, y: 3.53589, z: -1}
+  - {x: -20.894623, y: -1, z: 20.618717}
+  - {x: -20.894623, y: -1, z: -1}
+  - {x: -20.894623, y: 1, z: 20.618717}
+  - {x: -20.894623, y: 1, z: -1}
+  - {x: -20.894623, y: 2.2763734, z: 20.618717}
+  - {x: -20.894623, y: 2.2763734, z: -1}
+  - {x: -23.75785, y: 3.53589, z: 20.618717}
+  - {x: -23.75785, y: 3.53589, z: -1}
+  - {x: -23.75785, y: -1, z: 20.618717}
+  - {x: -23.75785, y: -1, z: -1}
+  - {x: -23.75785, y: 1, z: 20.618717}
+  - {x: -23.75785, y: 1, z: -1}
+  - {x: -23.75785, y: 2.2763734, z: 20.618717}
+  - {x: -23.75785, y: 2.2763734, z: -1}
+  - {x: -27.45879, y: 3.53589, z: 20.618717}
+  - {x: -27.45879, y: 3.53589, z: -1}
+  - {x: -27.45879, y: -1, z: 20.618717}
+  - {x: -27.45879, y: -1, z: -1}
+  - {x: -27.45879, y: 1, z: 20.618717}
+  - {x: -27.45879, y: 1, z: -1}
+  - {x: -27.45879, y: 2.2763734, z: 20.618717}
+  - {x: -27.45879, y: 2.2763734, z: -1}
+  - {x: 1, y: 3.53589, z: 1}
+  - {x: 1, y: -1, z: 1}
+  - {x: -32.023094, y: 3.53589, z: 1}
+  - {x: -32.023094, y: -1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: -32.023094, y: 1, z: 1}
+  - {x: 1, y: 2.2763734, z: 1}
+  - {x: -32.023094, y: 2.2763734, z: 1}
+  - {x: -1, y: 3.53589, z: 1}
+  - {x: -1, y: -1, z: 1}
+  - {x: -1, y: 1, z: 1}
+  - {x: -1, y: 2.2763734, z: 1}
+  - {x: -2.9938588, y: 3.53589, z: 1}
+  - {x: -2.9938588, y: -1, z: 1}
+  - {x: -2.9938588, y: 1, z: 1}
+  - {x: -2.9938588, y: 2.2763734, z: 1}
+  - {x: -5.1005173, y: 3.53589, z: 1}
+  - {x: -5.1005173, y: -1, z: 1}
+  - {x: -5.1005173, y: 1, z: 1}
+  - {x: -5.1005173, y: 2.2763734, z: 1}
+  - {x: -7.3482957, y: 3.53589, z: 1}
+  - {x: -7.3482957, y: -1, z: 1}
+  - {x: -7.3482957, y: 1, z: 1}
+  - {x: -7.3482957, y: 2.2763734, z: 1}
+  - {x: -9.863506, y: 3.53589, z: 1}
+  - {x: -9.863506, y: -1, z: 1}
+  - {x: -9.863506, y: 1, z: 1}
+  - {x: -9.863506, y: 2.2763734, z: 1}
+  - {x: -12.42024, y: 3.53589, z: 1}
+  - {x: -12.42024, y: -1, z: 1}
+  - {x: -12.42024, y: 1, z: 1}
+  - {x: -12.42024, y: 2.2763734, z: 1}
+  - {x: -15.198395, y: 3.53589, z: 1}
+  - {x: -15.198395, y: -1, z: 1}
+  - {x: -15.198395, y: 1, z: 1}
+  - {x: -15.198395, y: 2.2763734, z: 1}
+  - {x: -18.02726, y: 3.53589, z: 1}
+  - {x: -18.02726, y: -1, z: 1}
+  - {x: -18.02726, y: 1, z: 1}
+  - {x: -18.02726, y: 2.2763734, z: 1}
+  - {x: -20.894623, y: 3.53589, z: 1}
+  - {x: -20.894623, y: -1, z: 1}
+  - {x: -20.894623, y: 1, z: 1}
+  - {x: -20.894623, y: 2.2763734, z: 1}
+  - {x: -23.75785, y: 3.53589, z: 1}
+  - {x: -23.75785, y: -1, z: 1}
+  - {x: -23.75785, y: 1, z: 1}
+  - {x: -23.75785, y: 2.2763734, z: 1}
+  - {x: -27.45879, y: 3.53589, z: 1}
+  - {x: -27.45879, y: -1, z: 1}
+  - {x: -27.45879, y: 1, z: 1}
+  - {x: -27.45879, y: 2.2763734, z: 1}
+  - {x: 1, y: 3.53589, z: 3.1510005}
+  - {x: 1, y: -1, z: 3.1510005}
+  - {x: -32.023094, y: 3.53589, z: 3.1510005}
+  - {x: -32.023094, y: -1, z: 3.1510005}
+  - {x: 1, y: 1, z: 3.1510005}
+  - {x: -32.023094, y: 1, z: 3.1510005}
+  - {x: 1, y: 2.2763734, z: 3.1510005}
+  - {x: -32.023094, y: 2.2763734, z: 3.1510005}
+  - {x: -1, y: 3.53589, z: 3.1510005}
+  - {x: -1, y: -1, z: 3.1510005}
+  - {x: -1, y: 1, z: 3.1510005}
+  - {x: -1, y: 2.2763734, z: 3.1510005}
+  - {x: -2.9938588, y: 3.53589, z: 3.1510005}
+  - {x: -2.9938588, y: -1, z: 3.1510005}
+  - {x: -2.9938588, y: 1, z: 3.1510005}
+  - {x: -2.9938588, y: 2.2763734, z: 3.1510005}
+  - {x: -5.1005173, y: 3.53589, z: 3.1510005}
+  - {x: -5.1005173, y: -1, z: 3.1510005}
+  - {x: -5.1005173, y: 1, z: 3.1510005}
+  - {x: -5.1005173, y: 2.2763734, z: 3.1510005}
+  - {x: -7.3482957, y: 3.53589, z: 3.1510005}
+  - {x: -7.3482957, y: -1, z: 3.1510005}
+  - {x: -7.3482957, y: 1, z: 3.1510005}
+  - {x: -7.3482957, y: 2.2763734, z: 3.1510005}
+  - {x: -9.863506, y: 3.53589, z: 3.1510005}
+  - {x: -9.863506, y: -1, z: 3.1510005}
+  - {x: -9.863506, y: 1, z: 3.1510005}
+  - {x: -9.863506, y: 2.2763734, z: 3.1510005}
+  - {x: -12.42024, y: 3.53589, z: 3.1510005}
+  - {x: -12.42024, y: -1, z: 3.1510005}
+  - {x: -12.42024, y: 1, z: 3.1510005}
+  - {x: -12.42024, y: 2.2763734, z: 3.1510005}
+  - {x: -15.198395, y: 3.53589, z: 3.1510005}
+  - {x: -15.198395, y: -1, z: 3.1510005}
+  - {x: -15.198395, y: 1, z: 3.1510005}
+  - {x: -15.198395, y: 2.2763734, z: 3.1510005}
+  - {x: -18.02726, y: 3.53589, z: 3.1510005}
+  - {x: -18.02726, y: -1, z: 3.1510005}
+  - {x: -18.02726, y: 1, z: 3.1510005}
+  - {x: -18.02726, y: 2.2763734, z: 3.1510005}
+  - {x: -20.894623, y: 3.53589, z: 3.1510005}
+  - {x: -20.894623, y: -1, z: 3.1510005}
+  - {x: -20.894623, y: 1, z: 3.1510005}
+  - {x: -20.894623, y: 2.2763734, z: 3.1510005}
+  - {x: -23.75785, y: 3.53589, z: 3.1510005}
+  - {x: -23.75785, y: -1, z: 3.1510005}
+  - {x: -23.75785, y: 1, z: 3.1510005}
+  - {x: -23.75785, y: 2.2763734, z: 3.1510005}
+  - {x: -27.45879, y: 3.53589, z: 3.1510005}
+  - {x: -27.45879, y: -1, z: 3.1510005}
+  - {x: -27.45879, y: 1, z: 3.1510005}
+  - {x: -27.45879, y: 2.2763734, z: 3.1510005}
+  - {x: 1, y: 3.53589, z: 5.50369}
+  - {x: 1, y: -1, z: 5.50369}
+  - {x: -32.023094, y: 3.53589, z: 5.50369}
+  - {x: -32.023094, y: -1, z: 5.50369}
+  - {x: 1, y: 1, z: 5.50369}
+  - {x: -32.023094, y: 1, z: 5.50369}
+  - {x: 1, y: 2.2763734, z: 5.50369}
+  - {x: -32.023094, y: 2.2763734, z: 5.50369}
+  - {x: -1, y: 3.53589, z: 5.50369}
+  - {x: -1, y: -1, z: 5.50369}
+  - {x: -1, y: 1, z: 5.50369}
+  - {x: -1, y: 2.2763734, z: 5.50369}
+  - {x: -2.9938588, y: 3.53589, z: 5.50369}
+  - {x: -2.9938588, y: -1, z: 5.50369}
+  - {x: -2.9938588, y: 1, z: 5.50369}
+  - {x: -2.9938588, y: 2.2763734, z: 5.50369}
+  - {x: -5.1005173, y: 3.53589, z: 5.50369}
+  - {x: -5.1005173, y: -1, z: 5.50369}
+  - {x: -5.1005173, y: 1, z: 5.50369}
+  - {x: -5.1005173, y: 2.2763734, z: 5.50369}
+  - {x: -7.3482957, y: 3.53589, z: 5.50369}
+  - {x: -7.3482957, y: -1, z: 5.50369}
+  - {x: -7.3482957, y: 1, z: 5.50369}
+  - {x: -7.3482957, y: 2.2763734, z: 5.50369}
+  - {x: -9.863506, y: 3.53589, z: 5.50369}
+  - {x: -9.863506, y: -1, z: 5.50369}
+  - {x: -9.863506, y: 1, z: 5.50369}
+  - {x: -9.863506, y: 2.2763734, z: 5.50369}
+  - {x: -12.42024, y: 3.53589, z: 5.50369}
+  - {x: -12.42024, y: -1, z: 5.50369}
+  - {x: -12.42024, y: 1, z: 5.50369}
+  - {x: -12.42024, y: 2.2763734, z: 5.50369}
+  - {x: -15.198395, y: 3.53589, z: 5.50369}
+  - {x: -15.198395, y: -1, z: 5.50369}
+  - {x: -15.198395, y: 1, z: 5.50369}
+  - {x: -15.198395, y: 2.2763734, z: 5.50369}
+  - {x: -18.02726, y: 3.53589, z: 5.50369}
+  - {x: -18.02726, y: -1, z: 5.50369}
+  - {x: -18.02726, y: 1, z: 5.50369}
+  - {x: -18.02726, y: 2.2763734, z: 5.50369}
+  - {x: -20.894623, y: 3.53589, z: 5.50369}
+  - {x: -20.894623, y: -1, z: 5.50369}
+  - {x: -20.894623, y: 1, z: 5.50369}
+  - {x: -20.894623, y: 2.2763734, z: 5.50369}
+  - {x: -23.75785, y: 3.53589, z: 5.50369}
+  - {x: -23.75785, y: -1, z: 5.50369}
+  - {x: -23.75785, y: 1, z: 5.50369}
+  - {x: -23.75785, y: 2.2763734, z: 5.50369}
+  - {x: -27.45879, y: 3.53589, z: 5.50369}
+  - {x: -27.45879, y: -1, z: 5.50369}
+  - {x: -27.45879, y: 1, z: 5.50369}
+  - {x: -27.45879, y: 2.2763734, z: 5.50369}
+  - {x: 1, y: 3.53589, z: 8.055835}
+  - {x: 1, y: -1, z: 8.055835}
+  - {x: -32.023094, y: 3.53589, z: 8.055835}
+  - {x: -32.023094, y: -1, z: 8.055835}
+  - {x: 1, y: 1, z: 8.055835}
+  - {x: -32.023094, y: 1, z: 8.055835}
+  - {x: 1, y: 2.2763734, z: 8.055835}
+  - {x: -32.023094, y: 2.2763734, z: 8.055835}
+  - {x: -1, y: 3.53589, z: 8.055835}
+  - {x: -1, y: -1, z: 8.055835}
+  - {x: -1, y: 1, z: 8.055835}
+  - {x: -1, y: 2.2763734, z: 8.055835}
+  - {x: -2.9938588, y: 3.53589, z: 8.055835}
+  - {x: -2.9938588, y: -1, z: 8.055835}
+  - {x: -2.9938588, y: 1, z: 8.055835}
+  - {x: -2.9938588, y: 2.2763734, z: 8.055835}
+  - {x: -5.1005173, y: 3.53589, z: 8.055835}
+  - {x: -5.1005173, y: -1, z: 8.055835}
+  - {x: -5.1005173, y: 1, z: 8.055835}
+  - {x: -5.1005173, y: 2.2763734, z: 8.055835}
+  - {x: -7.3482957, y: 3.53589, z: 8.055835}
+  - {x: -7.3482957, y: -1, z: 8.055835}
+  - {x: -7.3482957, y: 1, z: 8.055835}
+  - {x: -7.3482957, y: 2.2763734, z: 8.055835}
+  - {x: -9.863506, y: 3.53589, z: 8.055835}
+  - {x: -9.863506, y: -1, z: 8.055835}
+  - {x: -9.863506, y: 1, z: 8.055835}
+  - {x: -9.863506, y: 2.2763734, z: 8.055835}
+  - {x: -12.42024, y: 3.53589, z: 8.055835}
+  - {x: -12.42024, y: -1, z: 8.055835}
+  - {x: -12.42024, y: 1, z: 8.055835}
+  - {x: -12.42024, y: 2.2763734, z: 8.055835}
+  - {x: -15.198395, y: 3.53589, z: 8.055835}
+  - {x: -15.198395, y: -1, z: 8.055835}
+  - {x: -15.198395, y: 1, z: 8.055835}
+  - {x: -15.198395, y: 2.2763734, z: 8.055835}
+  - {x: -18.02726, y: 3.53589, z: 8.055835}
+  - {x: -18.02726, y: -1, z: 8.055835}
+  - {x: -18.02726, y: 1, z: 8.055835}
+  - {x: -18.02726, y: 2.2763734, z: 8.055835}
+  - {x: -20.894623, y: 3.53589, z: 8.055835}
+  - {x: -20.894623, y: -1, z: 8.055835}
+  - {x: -20.894623, y: 1, z: 8.055835}
+  - {x: -20.894623, y: 2.2763734, z: 8.055835}
+  - {x: -23.75785, y: 3.53589, z: 8.055835}
+  - {x: -23.75785, y: -1, z: 8.055835}
+  - {x: -23.75785, y: 1, z: 8.055835}
+  - {x: -23.75785, y: 2.2763734, z: 8.055835}
+  - {x: -27.45879, y: 3.53589, z: 8.055835}
+  - {x: -27.45879, y: -1, z: 8.055835}
+  - {x: -27.45879, y: 1, z: 8.055835}
+  - {x: -27.45879, y: 2.2763734, z: 8.055835}
+  - {x: 1, y: 3.53589, z: 11.125579}
+  - {x: 1, y: -1, z: 11.125579}
+  - {x: -32.023094, y: 3.53589, z: 11.125579}
+  - {x: -32.023094, y: -1, z: 11.125579}
+  - {x: 1, y: 1, z: 11.125579}
+  - {x: -32.023094, y: 1, z: 11.125579}
+  - {x: 1, y: 2.2763734, z: 11.125579}
+  - {x: -32.023094, y: 2.2763734, z: 11.125579}
+  - {x: -1, y: 3.53589, z: 11.125579}
+  - {x: -1, y: -1, z: 11.125579}
+  - {x: -1, y: 1, z: 11.125579}
+  - {x: -1, y: 2.2763734, z: 11.125579}
+  - {x: -2.9938588, y: 3.53589, z: 11.125579}
+  - {x: -2.9938588, y: -1, z: 11.125579}
+  - {x: -2.9938588, y: 1, z: 11.125579}
+  - {x: -2.9938588, y: 2.2763734, z: 11.125579}
+  - {x: -5.1005173, y: 3.53589, z: 11.125579}
+  - {x: -5.1005173, y: -1, z: 11.125579}
+  - {x: -5.1005173, y: 1, z: 11.125579}
+  - {x: -5.1005173, y: 2.2763734, z: 11.125579}
+  - {x: -7.3482957, y: 3.53589, z: 11.125579}
+  - {x: -7.3482957, y: -1, z: 11.125579}
+  - {x: -7.3482957, y: 1, z: 11.125579}
+  - {x: -7.3482957, y: 2.2763734, z: 11.125579}
+  - {x: -9.863506, y: 3.53589, z: 11.125579}
+  - {x: -9.863506, y: -1, z: 11.125579}
+  - {x: -9.863506, y: 1, z: 11.125579}
+  - {x: -9.863506, y: 2.2763734, z: 11.125579}
+  - {x: -12.42024, y: 3.53589, z: 11.125579}
+  - {x: -12.42024, y: -1, z: 11.125579}
+  - {x: -12.42024, y: 1, z: 11.125579}
+  - {x: -12.42024, y: 2.2763734, z: 11.125579}
+  - {x: -15.198395, y: 3.53589, z: 11.125579}
+  - {x: -15.198395, y: -1, z: 11.125579}
+  - {x: -15.198395, y: 1, z: 11.125579}
+  - {x: -15.198395, y: 2.2763734, z: 11.125579}
+  - {x: -18.02726, y: 3.53589, z: 11.125579}
+  - {x: -18.02726, y: -1, z: 11.125579}
+  - {x: -18.02726, y: 1, z: 11.125579}
+  - {x: -18.02726, y: 2.2763734, z: 11.125579}
+  - {x: -20.894623, y: 3.53589, z: 11.125579}
+  - {x: -20.894623, y: -1, z: 11.125579}
+  - {x: -20.894623, y: 1, z: 11.125579}
+  - {x: -20.894623, y: 2.2763734, z: 11.125579}
+  - {x: -23.75785, y: 3.53589, z: 11.125579}
+  - {x: -23.75785, y: -1, z: 11.125579}
+  - {x: -23.75785, y: 1, z: 11.125579}
+  - {x: -23.75785, y: 2.2763734, z: 11.125579}
+  - {x: -27.45879, y: 3.53589, z: 11.125579}
+  - {x: -27.45879, y: -1, z: 11.125579}
+  - {x: -27.45879, y: 1, z: 11.125579}
+  - {x: -27.45879, y: 2.2763734, z: 11.125579}
+  - {x: 1, y: 3.53589, z: 14.279393}
+  - {x: 1, y: -1, z: 14.279393}
+  - {x: -32.023094, y: 3.53589, z: 14.279393}
+  - {x: -32.023094, y: -1, z: 14.279393}
+  - {x: 1, y: 1, z: 14.279393}
+  - {x: -32.023094, y: 1, z: 14.279393}
+  - {x: 1, y: 2.2763734, z: 14.279393}
+  - {x: -32.023094, y: 2.2763734, z: 14.279393}
+  - {x: -1, y: 3.53589, z: 14.279393}
+  - {x: -1, y: -1, z: 14.279393}
+  - {x: -1, y: 1, z: 14.279393}
+  - {x: -1, y: 2.2763734, z: 14.279393}
+  - {x: -2.9938588, y: 3.53589, z: 14.279393}
+  - {x: -2.9938588, y: -1, z: 14.279393}
+  - {x: -2.9938588, y: 1, z: 14.279393}
+  - {x: -2.9938588, y: 2.2763734, z: 14.279393}
+  - {x: -5.1005173, y: 3.53589, z: 14.279393}
+  - {x: -5.1005173, y: -1, z: 14.279393}
+  - {x: -5.1005173, y: 1, z: 14.279393}
+  - {x: -5.1005173, y: 2.2763734, z: 14.279393}
+  - {x: -7.3482957, y: 3.53589, z: 14.279393}
+  - {x: -7.3482957, y: -1, z: 14.279393}
+  - {x: -7.3482957, y: 1, z: 14.279393}
+  - {x: -7.3482957, y: 2.2763734, z: 14.279393}
+  - {x: -9.863506, y: 3.53589, z: 14.279393}
+  - {x: -9.863506, y: -1, z: 14.279393}
+  - {x: -9.863506, y: 1, z: 14.279393}
+  - {x: -9.863506, y: 2.2763734, z: 14.279393}
+  - {x: -12.42024, y: 3.53589, z: 14.279393}
+  - {x: -12.42024, y: -1, z: 14.279393}
+  - {x: -12.42024, y: 1, z: 14.279393}
+  - {x: -12.42024, y: 2.2763734, z: 14.279393}
+  - {x: -15.198395, y: 3.53589, z: 14.279393}
+  - {x: -15.198395, y: -1, z: 14.279393}
+  - {x: -15.198395, y: 1, z: 14.279393}
+  - {x: -15.198395, y: 2.2763734, z: 14.279393}
+  - {x: -18.02726, y: 3.53589, z: 14.279393}
+  - {x: -18.02726, y: -1, z: 14.279393}
+  - {x: -18.02726, y: 1, z: 14.279393}
+  - {x: -18.02726, y: 2.2763734, z: 14.279393}
+  - {x: -20.894623, y: 3.53589, z: 14.279393}
+  - {x: -20.894623, y: -1, z: 14.279393}
+  - {x: -20.894623, y: 1, z: 14.279393}
+  - {x: -20.894623, y: 2.2763734, z: 14.279393}
+  - {x: -23.75785, y: 3.53589, z: 14.279393}
+  - {x: -23.75785, y: -1, z: 14.279393}
+  - {x: -23.75785, y: 1, z: 14.279393}
+  - {x: -23.75785, y: 2.2763734, z: 14.279393}
+  - {x: -27.45879, y: 3.53589, z: 14.279393}
+  - {x: -27.45879, y: -1, z: 14.279393}
+  - {x: -27.45879, y: 1, z: 14.279393}
+  - {x: -27.45879, y: 2.2763734, z: 14.279393}
+  - {x: 1, y: 3.53589, z: 17.345242}
+  - {x: 1, y: -1, z: 17.345242}
+  - {x: -32.023094, y: 3.53589, z: 17.345242}
+  - {x: -32.023094, y: -1, z: 17.345242}
+  - {x: 1, y: 1, z: 17.345242}
+  - {x: -32.023094, y: 1, z: 17.345242}
+  - {x: 1, y: 2.2763734, z: 17.345242}
+  - {x: -32.023094, y: 2.2763734, z: 17.345242}
+  - {x: -1, y: 3.53589, z: 17.345242}
+  - {x: -1, y: -1, z: 17.345242}
+  - {x: -1, y: 1, z: 17.345242}
+  - {x: -1, y: 2.2763734, z: 17.345242}
+  - {x: -2.9938588, y: 3.53589, z: 17.345242}
+  - {x: -2.9938588, y: -1, z: 17.345242}
+  - {x: -2.9938588, y: 1, z: 17.345242}
+  - {x: -2.9938588, y: 2.2763734, z: 17.345242}
+  - {x: -5.1005173, y: 3.53589, z: 17.345242}
+  - {x: -5.1005173, y: -1, z: 17.345242}
+  - {x: -5.1005173, y: 1, z: 17.345242}
+  - {x: -5.1005173, y: 2.2763734, z: 17.345242}
+  - {x: -7.3482957, y: 3.53589, z: 17.345242}
+  - {x: -7.3482957, y: -1, z: 17.345242}
+  - {x: -7.3482957, y: 1, z: 17.345242}
+  - {x: -7.3482957, y: 2.2763734, z: 17.345242}
+  - {x: -9.863506, y: 3.53589, z: 17.345242}
+  - {x: -9.863506, y: -1, z: 17.345242}
+  - {x: -9.863506, y: 1, z: 17.345242}
+  - {x: -9.863506, y: 2.2763734, z: 17.345242}
+  - {x: -12.42024, y: 3.53589, z: 17.345242}
+  - {x: -12.42024, y: -1, z: 17.345242}
+  - {x: -12.42024, y: 1, z: 17.345242}
+  - {x: -12.42024, y: 2.2763734, z: 17.345242}
+  - {x: -15.198395, y: 3.53589, z: 17.345242}
+  - {x: -15.198395, y: -1, z: 17.345242}
+  - {x: -15.198395, y: 1, z: 17.345242}
+  - {x: -15.198395, y: 2.2763734, z: 17.345242}
+  - {x: -18.02726, y: 3.53589, z: 17.345242}
+  - {x: -18.02726, y: -1, z: 17.345242}
+  - {x: -18.02726, y: 1, z: 17.345242}
+  - {x: -18.02726, y: 2.2763734, z: 17.345242}
+  - {x: -20.894623, y: 3.53589, z: 17.345242}
+  - {x: -20.894623, y: -1, z: 17.345242}
+  - {x: -20.894623, y: 1, z: 17.345242}
+  - {x: -20.894623, y: 2.2763734, z: 17.345242}
+  - {x: -23.75785, y: 3.53589, z: 17.345242}
+  - {x: -23.75785, y: -1, z: 17.345242}
+  - {x: -23.75785, y: 1, z: 17.345242}
+  - {x: -23.75785, y: 2.2763734, z: 17.345242}
+  - {x: -27.45879, y: 3.53589, z: 17.345242}
+  - {x: -27.45879, y: -1, z: 17.345242}
+  - {x: -27.45879, y: 1, z: 17.345242}
+  - {x: -27.45879, y: 2.2763734, z: 17.345242}
+  m_Dering: 1
+--- !u!1 &2133684167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2133684168}
+  - component: {fileID: 2133684169}
+  m_Layer: 0
+  m_Name: Reflection Probe Hospital Doctor Room (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2133684168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133684167}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.02, y: 1.228, z: 2.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681590893}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &2133684169
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133684167}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 7.532847, y: 10, z: 12.514535}
+  m_BoxOffset: {x: 0.06331611, y: 0, z: 0.45147657}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &2752209123124734620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2752209123124734621}
+  m_Layer: 0
+  m_Name: '-- LIGHTING -- '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2752209123124734621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2752209123124734620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.1508646, y: 3.0351593, z: 17.915136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2752209123816350303}
+  - {fileID: 1681590893}
+  - {fileID: 2099310278}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2752209123816350301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2752209123816350303}
+  - component: {fileID: 2752209123816350302}
+  - component: {fileID: 2752209123816350296}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2752209123816350303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2752209123816350301}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 4.1508646, y: -0.03515935, z: -17.915136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2752209123124734621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!108 &2752209123816350302
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2752209123816350301}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &2752209123816350296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2752209123816350301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}

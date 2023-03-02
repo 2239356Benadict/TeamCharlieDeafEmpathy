@@ -88,6 +88,6 @@ public class FollowThePath : MonoBehaviour
     public void DestroyTheNPC()
     {
             Destroy(this.gameObject);
-            Debug.Log(destPoint.ToString());  
+            //Debug.Log(destPoint.ToString());  
     }
 }

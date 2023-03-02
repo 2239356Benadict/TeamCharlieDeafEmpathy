@@ -15,8 +15,8 @@ TagManager:
   - NPCStarter
   - FollowDoctor
   - DoctorDesk
-  - Doctor
-  - DocCollider
+  - ReceptionArea
+  - OneTimeAudio
   layers:
   - Default
   - TransparentFX
