@@ -20,7 +20,7 @@ public class EnablingGameObject : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             numberOfTimesCollided++;
-            if(numberOfTimesCollided == 2)
+            if(numberOfTimesCollided == 1)
             {
                 infoPanel.SetActive(true);
             }

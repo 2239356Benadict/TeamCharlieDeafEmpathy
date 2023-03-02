@@ -73,7 +73,7 @@ public class SoundTriggerScript : MonoBehaviour
         audiosource.PlayOneShot(audioClip[audioNumber]);
         yield return new WaitForSeconds(audioClip[audioNumber].length);
         audiosource.enabled = false;
-        Debug.Log("Playing One Shot function");
+
     }
 
   
