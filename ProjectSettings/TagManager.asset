@@ -17,6 +17,8 @@ TagManager:
   - DoctorDesk
   - ReceptionArea
   - OneTimeAudio
+  - Doctor
+  - FinalDestination
   layers:
   - Default
   - TransparentFX
