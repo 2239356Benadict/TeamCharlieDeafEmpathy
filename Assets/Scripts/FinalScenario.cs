@@ -13,6 +13,7 @@ public class FinalScenario : MonoBehaviour
     private void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
+        endPanel.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {

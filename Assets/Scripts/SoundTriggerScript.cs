@@ -46,6 +46,23 @@ public class SoundTriggerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player" && !audiosource.isPlaying && !isOneShotAudioPlay)
+        {
+            audiosource.Stop();
+        }
+        else if (other.tag == "Player" && this.gameObject.tag == "ReceptionArea" && !isOneShotAudioPlay)
+        {
+            audiosource.Stop();
+
+        }
+        else if (other.tag == "Player" && !audiosource.isPlaying && isOneShotAudioPlay)
+        {
+            audiosource.Stop();
+        }
+    }
+
 
     // Normal audio play
     IEnumerator playAudioInstruction()
