@@ -11,8 +11,9 @@ public class DoctorandPatientAnimatorScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        DoctorsRoomCollider = gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;
-        DoctorsRoomCollider.isTrigger = true;
+        //DoctorsRoomCollider = gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;
+        //DoctorsRoomCollider.isTrigger = true;
+        DoctorsRoomCollider = gameObject.GetComponent<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)

@@ -14,6 +14,7 @@ public class DoctorWalkingAround : MonoBehaviour
     public Animator doctorAnimator;
     public AnimationClip[] doctorAnimationClip;
     public AnimationClip doctorAnimationClipLength;
+    public Animation doctorAnimation;
     //public Animation nPCAnimation;
 
     private int destPoint = 0;
@@ -26,6 +27,7 @@ public class DoctorWalkingAround : MonoBehaviour
     public bool isGoneBack;
     public bool isAtReceptionArea;
     public bool canNPCFollow;
+    public bool isWaitingForUser;
 
     void Start()
     {
@@ -35,8 +37,11 @@ public class DoctorWalkingAround : MonoBehaviour
         isAtReceptionArea = false;
         canNPCFollow = false;
         followDoctorCheckpoint.SetActive(false);
+
+        doctorAnimation = gameObject.GetComponent<Animation>();
+
         // invoke the doctors to and fro movement
-        InvokeRepeating("WalkAround", 1, doctorWalkingRepeatTime);
+        InvokeRepeating("WalkAround", 6f, doctorWalkingRepeatTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -56,17 +61,25 @@ public class DoctorWalkingAround : MonoBehaviour
             isGoneBack = true;
             canNPCFollow = false;
             followDoctorCheckpoint.SetActive(false);
+            
+
+            doctorAnimator.Play("Stand To Sit");
+
         }
         else if (other.tag == "FollowDoctor")   //"NPCStarter"
         {
             canNPCFollow = true;
-            
+            isGoneBack = false;
             Debug.Log("FollowDoc");
+        }
+        else if (other.tag == "NPCStarter")  
+        {
+            isGoneBack = false;
         }
         else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 4)
         {
             isAtReceptionArea = true;
-            isGoneBack = true;
+            isGoneBack = false;
             numberOfNPCDone++;
             if (timerValue < doctorWaitingTime)
             {
@@ -78,13 +91,16 @@ public class DoctorWalkingAround : MonoBehaviour
             }
 
             followDoctorCheckpoint.SetActive(true);
+
+            
+        }
+        else if(isGoneBack && numberOfNPCDone == 5)
+        {
+            CancelInvoke("WalkAround");
+            isWaitingForUser = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        
-    }
     void GotoNextPoint()
     {
         // Returns if no points have been set up
@@ -111,12 +127,25 @@ public class DoctorWalkingAround : MonoBehaviour
         if (isAtReceptionArea)
         {
             yield return new WaitForSeconds(receptionWaitingTime);
+
+            doctorAnimation.clip = doctorAnimationClip[6];
+            doctorAnimation.Play();
+            yield return new WaitForSeconds(1f);
+
             doctorAnimator.Play("Walking");
             agent.destination = wayback.position;
+
             isAtReceptionArea = false;
-            isGoneBack = true;
+            //isGoneBack = true;
         }
         yield return new WaitForSeconds(1);
+
+        if (isGoneBack)
+        {
+            doctorAnimator.Play("Stand To Sit");
+            doctorAnimation.clip = doctorAnimationClip[7];
+            doctorAnimation.Play();
+        }
 
         Debug.Log("Doctor is walking between two points");
     }

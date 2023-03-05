@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject doctorNPC;
     public GameObject doctorPassCheckpoint;
+
+    public FollowThePath receptionistToStandUp;
     
     public GameObject[] patientsArray;
 
@@ -16,8 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        doctor = doctorNPC.GetComponent<DoctorWalkingAround>();
-        
+        doctor = doctorNPC.GetComponent<DoctorWalkingAround>();   
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,5 +47,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-   
+
+    private void Update()
+    {
+        if (doctor.isWaitingForUser)
+        {
+            receptionistToStandUp.nPCAnimator.Play("Sit To Stand");
+        }
+    }
+
 }
