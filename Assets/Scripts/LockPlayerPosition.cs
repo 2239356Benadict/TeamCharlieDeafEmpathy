@@ -1,36 +1,51 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps to freeze the movement of the gameobject attached with this script.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LockPlayerPosition : MonoBehaviour
 {
-    public int numberOfTimes;
 
     public GameObject gameObjectToLock;
     [SerializeField]
     private Rigidbody lockingObjectRigidBody;
+    [SerializeField]
+    private int numberOfTimes;
 
     private void Start()
     {
-        
+        gameObjectToLock = GameObject.FindGameObjectWithTag("Player");
+        lockingObjectRigidBody = gameObjectToLock.GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        gameObjectToLock = other.gameObject;
-        lockingObjectRigidBody = gameObjectToLock.GetComponent<Rigidbody>();
-        numberOfTimes++;
-        if (numberOfTimes == 2)
+        if (other.CompareTag("Player"))
         {
-            StartCoroutine(LockPosition());
+            numberOfTimes++;
+        }
+
+        if (numberOfTimes == 2 && other.CompareTag("Player"))
+        {
+            //StartCoroutine(LockPosition());
+            LockPos();
         }
     }
 
-    IEnumerator LockPosition()
+    public void LockPos()
     {
-        gameObjectToLock.transform.position = gameObject.transform.position;
+        lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
+    }
+
+    private IEnumerator LockPosition()
+    {
+        lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
         yield return new WaitForSeconds(3);
-        gameObjectToLock.transform.position = gameObjectToLock.transform.position;
+        lockingObjectRigidBody.constraints = RigidbodyConstraints.None;
 
     }
 }

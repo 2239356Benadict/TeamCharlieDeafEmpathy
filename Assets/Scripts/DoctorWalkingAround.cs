@@ -1,3 +1,8 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps the NPC to walk around through the target points and to check the boolean values for other NPCs to follow this gameobject.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +41,7 @@ public class DoctorWalkingAround : MonoBehaviour
         agent.autoBraking = false;
         isAtReceptionArea = false;
         canNPCFollow = false;
+
         followDoctorCheckpoint.SetActive(false);
 
         doctorAnimation = gameObject.GetComponent<Animation>();
@@ -50,37 +56,43 @@ public class DoctorWalkingAround : MonoBehaviour
         {
             isAtReceptionArea = true;
             isGoneBack = false;
+            canNPCFollow = false;
+
             numberOfNPCDone++;
+            
             doctorAnimator.Play("Talking");
 
             followDoctorCheckpoint.SetActive(true);
         }
         else if (other.tag == "DoctorDesk")
         {
-            isAtReceptionArea = false;
             isGoneBack = true;
+            isAtReceptionArea = false;
             canNPCFollow = false;
             followDoctorCheckpoint.SetActive(false);
-            
 
-            doctorAnimator.Play("Stand To Sit");
-
+            Debug.Log("Doc at Doctor's Desk");
         }
         else if (other.tag == "FollowDoctor")   //"NPCStarter"
         {
             canNPCFollow = true;
             isGoneBack = false;
+            isAtReceptionArea = false;
+
             Debug.Log("FollowDoc");
         }
         else if (other.tag == "NPCStarter")  
         {
             isGoneBack = false;
+            isAtReceptionArea = false;
+
         }
         else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 4)
         {
             isAtReceptionArea = true;
             isGoneBack = false;
             numberOfNPCDone++;
+
             if (timerValue < doctorWaitingTime)
             {
                 doctorAnimator.Play("Idle");
@@ -90,36 +102,42 @@ public class DoctorWalkingAround : MonoBehaviour
                 WalkAround();
             }
 
-            followDoctorCheckpoint.SetActive(true);
-
-            
+            followDoctorCheckpoint.SetActive(true);            
         }
-        else if(isGoneBack && numberOfNPCDone == 5)
+        else if(other.tag == "DoctorDesk" && isGoneBack && numberOfNPCDone == 5)
         {
             CancelInvoke("WalkAround");
             isWaitingForUser = true;
+            doctorAnimator.Play("Stand To Sit");
         }
     }
-
-    void GotoNextPoint()
-    {
-        // Returns if no points have been set up
-        if (points.Length == 0)
-            return;
+    /// <summary>
+    /// Method to make the NPC to walk through the target points.
+    /// </summary>
+    //void GotoNextPoint()
+    //{
+    //    // Returns if no points have been set up
+    //    if (points.Length == 0)
+    //        return;
         
-        // Set the agent to go to the currently selected destination.
-        agent.destination = points[destPoint].position;
+    //    // Set the agent to go to the currently selected destination.
+    //    agent.destination = points[destPoint].position;
 
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
-        destPoint = (destPoint + 1);// % points.Length;        
-    }
+    //    // Choose the next point in the array as the destination,
+    //    // cycling to the start if necessary.
+    //    destPoint = (destPoint + 1);// % points.Length;        
+    //}
 
+    
     public void WalkAround()
     {
         StartCoroutine(WalkBetweenPoints());
     }
 
+    /// <summary>
+    /// Ienumerator that helps the NPC to walk between two points 
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator WalkBetweenPoints()
     {
         agent.destination = points[5].position;
@@ -142,7 +160,7 @@ public class DoctorWalkingAround : MonoBehaviour
 
         if (isGoneBack)
         {
-            doctorAnimator.Play("Stand To Sit");
+            //doctorAnimator.Play("Stand To Sit");
             doctorAnimation.clip = doctorAnimationClip[7];
             doctorAnimation.Play();
         }

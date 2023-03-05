@@ -1,3 +1,8 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps the user in managing the NPCs.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject doctorNPC;
     public GameObject doctorPassCheckpoint;
 
-    public FollowThePath receptionistToStandUp;
+    public GameObject receptionistToStandUp;
+    public Animator receptionistStandUp;
     
     public GameObject[] patientsArray;
 
@@ -18,12 +24,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        doctor = doctorNPC.GetComponent<DoctorWalkingAround>();   
+        doctor = doctorNPC.GetComponent<DoctorWalkingAround>();
+        receptionistStandUp = receptionistToStandUp.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "DoctorTargetArea")
+        if(other.tag == "Doctor")  //DoctorTargetArea
         {
             //nPCToMove++;
             NPCWalkingController();
@@ -52,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         if (doctor.isWaitingForUser)
         {
-            receptionistToStandUp.nPCAnimator.Play("Sit To Stand");
+            receptionistStandUp.Play("Sit To Stand");
         }
     }
 
