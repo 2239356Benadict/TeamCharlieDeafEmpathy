@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour
             //nPCToMove++;
             NPCWalkingController();
         }
+        else if(other.tag == "Player")
+        {
+            // NPC follow the player and stand behind the player
+        }
     }
     public void NPCWalkingController()
     {

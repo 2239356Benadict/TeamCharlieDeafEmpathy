@@ -22,10 +22,6 @@ public class ReceptionistAnimController : MonoBehaviour
 
             anim.Play("Sitting Talking ");
         }
-        //else 
-        //{
-        //    anim.Play("Sitting Talking"); 
-        //    Debug.Log("Player has Triggered Talking Anim"); 
-        //}
+
     }
 }

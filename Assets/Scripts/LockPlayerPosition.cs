@@ -1,4 +1,4 @@
-///Copywrite @ 2239356@swansea university
+///Copywrite @ '2239356@swansea university'
 ///Date:05/03/2023
 ///Author: Benadict Joseph
 ///This scripts helps to freeze the movement of the gameobject attached with this script.
@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class LockPlayerPosition : MonoBehaviour
 {
@@ -14,12 +15,19 @@ public class LockPlayerPosition : MonoBehaviour
     [SerializeField]
     private Rigidbody lockingObjectRigidBody;
     [SerializeField]
+    private DynamicMoveProvider xROriginDynamicMoveProvider;
+    [SerializeField]
     private int numberOfTimes;
+    private int nPCToGo;
+
+    public DoctorWalkingAround docWalkAround;
 
     private void Start()
     {
         gameObjectToLock = GameObject.FindGameObjectWithTag("Player");
         lockingObjectRigidBody = gameObjectToLock.GetComponent<Rigidbody>();
+        xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,12 +35,15 @@ public class LockPlayerPosition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             numberOfTimes++;
+            
         }
 
-        if (numberOfTimes == 2 && other.CompareTag("Player"))
+        if (numberOfTimes == 2 && other.CompareTag("Player") && nPCToGo < 4)
         {
-            //StartCoroutine(LockPosition());
-            LockPos();
+            //xROriginDynamicMoveProvider.enabled = false;
+
+            StartCoroutine(LockPosition());
+            //LockPos();  
         }
     }
 
@@ -43,9 +54,8 @@ public class LockPlayerPosition : MonoBehaviour
 
     private IEnumerator LockPosition()
     {
-        lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
-        yield return new WaitForSeconds(3);
-        lockingObjectRigidBody.constraints = RigidbodyConstraints.None;
-
+        xROriginDynamicMoveProvider.enabled = false;
+        yield return new WaitForSeconds(500f);
+        xROriginDynamicMoveProvider.enabled = true;
     }
 }

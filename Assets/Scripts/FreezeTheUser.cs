@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class FreezeTheUser : MonoBehaviour
 {
+    [SerializeField]
+    private DynamicMoveProvider moveProvider;
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    bool ifOtherReadyToFreeze = other.GetComponent<Rigidbody>().isKinematic;
-    //    if (other.tag == "Player")
-    //    {
-    //        //hbah
-    //    }
-    //}
+    private void Start()
+    {
+        moveProvider = gameObject.GetComponent<DynamicMoveProvider>();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "FinalDestination")
+        {
+            moveProvider.enabled = false;
+            Debug.Log("Player reached final destination");
+        }
+    }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-        
-    //}
+
 }
