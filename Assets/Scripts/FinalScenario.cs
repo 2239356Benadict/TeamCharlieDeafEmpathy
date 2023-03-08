@@ -19,13 +19,12 @@ public class FinalScenario : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(EnableTheUI());
+            EnableTheUI();
         }
     }
 
-    IEnumerator EnableTheUI()
+    public void EnableTheUI()
     {
-        yield return new WaitForSeconds(audioSource.clip.length);
         endPanel.SetActive(true);
     }
 }

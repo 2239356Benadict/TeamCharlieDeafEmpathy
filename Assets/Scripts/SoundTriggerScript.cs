@@ -66,6 +66,10 @@ public class SoundTriggerScript : MonoBehaviour
         {
             audiosource.Stop();
         }
+        else if (other.tag == "Player" && isOneShotAudioPlay)
+        {
+            audiosource.Stop();
+        }
     }
 
 
