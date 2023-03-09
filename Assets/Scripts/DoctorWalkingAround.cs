@@ -39,7 +39,7 @@ public class DoctorWalkingAround : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
 
-        agent.autoBraking = false;
+        //agent.autoBraking = false;
         isAtReceptionArea = false;
         canNPCFollow = false;
 
