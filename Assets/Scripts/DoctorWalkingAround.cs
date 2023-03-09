@@ -13,6 +13,7 @@ public class DoctorWalkingAround : MonoBehaviour
     public Transform[] points;
     public Transform wayback;
     public GameObject followDoctorCheckpoint;
+    public GameObject duplicateDoc;
     
     private NavMeshAgent agent;
 
@@ -87,7 +88,7 @@ public class DoctorWalkingAround : MonoBehaviour
             isAtReceptionArea = false;
 
         }
-        else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 4)
+        else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 3)
         {
             isAtReceptionArea = true;
             isGoneBack = false;
@@ -104,30 +105,16 @@ public class DoctorWalkingAround : MonoBehaviour
 
             followDoctorCheckpoint.SetActive(true);            
         }
-        else if(other.tag == "DoctorDesk" && isGoneBack && numberOfNPCDone == 5)
+        else if(isGoneBack && numberOfNPCDone == 4)
         {
             CancelInvoke("WalkAround");
             isWaitingForUser = true;
+            duplicateDoc.SetActive(true);
+
+            Destroy(gameObject);
             doctorAnimator.Play("Stand To Sit");
         }
     }
-    /// <summary>
-    /// Method to make the NPC to walk through the target points.
-    /// </summary>
-    //void GotoNextPoint()
-    //{
-    //    // Returns if no points have been set up
-    //    if (points.Length == 0)
-    //        return;
-        
-    //    // Set the agent to go to the currently selected destination.
-    //    agent.destination = points[destPoint].position;
-
-    //    // Choose the next point in the array as the destination,
-    //    // cycling to the start if necessary.
-    //    destPoint = (destPoint + 1);// % points.Length;        
-    //}
-
     
     public void WalkAround()
     {

@@ -20,7 +20,7 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 5)
+        if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 4)
         {
             StartCoroutine(WavingThePatient());
         }
@@ -34,5 +34,7 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         anim.Play("Sit To Stand");
+        yield return new WaitForSeconds(2f);
+        anim.Play("Waving");
     }
 }

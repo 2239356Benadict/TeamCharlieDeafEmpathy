@@ -21,6 +21,8 @@ public class DoctorandPatientAnimatorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.Play("Typing");
+
+            //anim.Play("Seated Idle");
         }
     }
 }
