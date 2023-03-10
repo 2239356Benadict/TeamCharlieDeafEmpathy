@@ -20,6 +20,8 @@ public class LockPlayerPosition : MonoBehaviour
     private int numberOfTimes;
     private int nPCToGo;
 
+    public bool isLocked;
+
     public DoctorWalkingAround docWalkAround;
 
     private void Start()
@@ -49,7 +51,7 @@ public class LockPlayerPosition : MonoBehaviour
 
     public void LockPos()
     {
-        lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
+        //lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
     }
 
     private IEnumerator LockPosition()
@@ -57,5 +59,17 @@ public class LockPlayerPosition : MonoBehaviour
         xROriginDynamicMoveProvider.enabled = false;
         yield return new WaitForSeconds(500f);
         xROriginDynamicMoveProvider.enabled = true;
+    }
+
+    private void Update()
+    {
+        if (isLocked)
+        {
+            xROriginDynamicMoveProvider.enabled = false;
+        }
+        else
+        {
+            xROriginDynamicMoveProvider.enabled = true;
+        }
     }
 }

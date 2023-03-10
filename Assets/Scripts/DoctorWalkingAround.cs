@@ -35,18 +35,20 @@ public class DoctorWalkingAround : MonoBehaviour
     public bool canNPCFollow;
     public bool isWaitingForUser;
 
+    public AudioSource whoNext;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
 
-        //agent.autoBraking = false;
+        agent.autoBraking = false;
         isAtReceptionArea = false;
         canNPCFollow = false;
 
         followDoctorCheckpoint.SetActive(false);
 
         doctorAnimation = gameObject.GetComponent<Animation>();
-
+        whoNext = gameObject.GetComponent<AudioSource>();
         // invoke the doctors to and fro movement
         InvokeRepeating("WalkAround", 6f, doctorWalkingRepeatTime);
     }
@@ -64,6 +66,8 @@ public class DoctorWalkingAround : MonoBehaviour
             doctorAnimator.Play("Talking");
 
             followDoctorCheckpoint.SetActive(true);
+
+            whoNext.Play();
         }
         else if (other.tag == "DoctorDesk")
         {
@@ -71,22 +75,17 @@ public class DoctorWalkingAround : MonoBehaviour
             isAtReceptionArea = false;
             canNPCFollow = false;
             followDoctorCheckpoint.SetActive(false);
-
-            Debug.Log("Doc at Doctor's Desk");
         }
         else if (other.tag == "FollowDoctor")   //"NPCStarter"
         {
             canNPCFollow = true;
             isGoneBack = false;
             isAtReceptionArea = false;
-
-            Debug.Log("FollowDoc");
         }
         else if (other.tag == "NPCStarter")  
         {
             isGoneBack = false;
             isAtReceptionArea = false;
-
         }
         else if (other.tag == "ReceptionAreaForDoc" && numberOfNPCDone == 3)
         {
@@ -151,8 +150,6 @@ public class DoctorWalkingAround : MonoBehaviour
             doctorAnimation.clip = doctorAnimationClip[7];
             doctorAnimation.Play();
         }
-
-        Debug.Log("Doctor is walking between two points");
     }
 
 }

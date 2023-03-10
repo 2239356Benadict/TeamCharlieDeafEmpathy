@@ -19,7 +19,6 @@ public class ReceptionistAnimController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             anim.Play("Sitting Talking ");
         }
 

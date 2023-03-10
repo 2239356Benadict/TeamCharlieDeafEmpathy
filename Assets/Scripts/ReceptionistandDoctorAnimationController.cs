@@ -9,6 +9,11 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
     public BoxCollider npcCollider;
     public DoctorWalkingAround doctorWalkingAroundScript;
 
+    public AudioSource callingAudio;
+    public bool canUserGo;
+
+    public LockPlayerPosition playerPosition;
+
 
     void Start()
     {
@@ -22,7 +27,15 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
     {
         if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 4)
         {
-            StartCoroutine(WavingThePatient());
+            WaveToThePatient();
+        }
+        else if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 3)
+        {
+            playerPosition.isLocked = false;
+        }
+        else if (other.CompareTag("Player"))
+        {
+            callingAudio.Play();
         }
         else if (other.CompareTag("Player"))
         {
@@ -30,11 +43,30 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         }
     }
 
+
+    public void WaveToThePatient()
+    {
+        StartCoroutine(WavingThePatient());
+    }
     IEnumerator WavingThePatient()
     {
         yield return new WaitForSeconds(5f);
-        anim.Play("Sit To Stand");
+        canUserGo = true;
+        yield return new WaitForSeconds(0.5f);
+        canUserGo = false;
         yield return new WaitForSeconds(2f);
-        anim.Play("Waving");
+        canUserGo = true;
+    }
+
+    void WaveToPatient()
+    {
+        if (canUserGo)
+        {
+            anim.Play("Waving");
+        }
+        else
+        {
+            anim.Play("Sit Idle");
+        }
     }
 }
