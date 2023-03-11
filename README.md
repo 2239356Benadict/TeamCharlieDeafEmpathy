@@ -22,22 +22,21 @@ HearUs enhance the users empathy through showing the struggles and anxiety deaf 
 
 
 
-# Unity-Meta-Quest-Template
-Unity template project optimised for Meta Quest devices.
+# Unity Settings
+
 Project made with Unity 2021.3.17f
 
 Changes from default Unity project with Android build target:  
 
 Packages:  
-Installed XR Plug-in Management. Targets Quest, Quest 2, Quest Pro  
-Installed OpenXR Plugin  
+Installed XR Plug-in Management. Quest 2 
 Installed Oculus XR Plugin  
 Installed XR Interaction Toolkit version 2.3.0 pre.1  
-Installed XR Hands 1.1.0 pre.2  
+
 URP Samples imported (includes useful blob shadow shader)  
 
 Quality Settings:  
-Custom Quality profiles  for Quest, Quest 2, Quest Pro. (Default Quest 2)  
+Custom Quality profiles  for Quest 2  
 Vsync disabled  
 Anisotropic Textures set to Per Texture.  
 Shadowmask Mode set to Shadowmask  
@@ -75,5 +74,3 @@ Additional Lights set to Per Pixel
 Notes:  
 Adjust URP shadow settings according to the needs of your game/app.   
 For release builds enable Low Overhead Mode under Oculus XR Plug-in Management options.  
-
-Cornell Box model taken form Sketchfab - Cornell Box- Original - Download Free 3D model by t-ly (@t-ly) https://sketchfab.com/3d-models/cornell-box-original-0d18de8d108c4c9cab1a4405698cc6b6
