@@ -1990,7 +1990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1420493508
 Transform:
   m_ObjectHideFlags: 0
@@ -4324,6 +4324,11 @@ PrefabInstance:
       propertyPath: patientsArray.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5726277455577905530, guid: 28e489516ede1e548834d1123b6ebb43,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5726277455656695431, guid: 28e489516ede1e548834d1123b6ebb43,
         type: 3}
       propertyPath: m_Mesh
@@ -4578,6 +4583,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377246986659848511, guid: 28e489516ede1e548834d1123b6ebb43,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e489516ede1e548834d1123b6ebb43, type: 3}
