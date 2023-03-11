@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 [RequireComponent(typeof(BoxCollider))]
 public class ReceptionistandDoctorAnimationController : MonoBehaviour
@@ -14,12 +15,17 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
 
     public LockPlayerPosition playerPosition;
 
+    public GameObject player;
+    public DynamicMoveProvider playerDynamicMoveProvider;
 
+    public int numberOfTimesDocCame;
     void Start()
     {
         anim = GetComponent<Animator>();
         npcCollider = GetComponent<BoxCollider>();
         npcCollider.isTrigger = true;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerDynamicMoveProvider = player.GetComponent<DynamicMoveProvider>();
     }
 
 
@@ -41,12 +47,22 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         {
             anim.Play("Talking");
         }
+        else if (other.CompareTag("Doctor"))
+        {
+            // To enable the player movement
+            numberOfTimesDocCame++;
+            if(numberOfTimesDocCame == 3)
+            {
+                playerDynamicMoveProvider.enabled = true;
+            }
+        }
     }
 
 
     public void WaveToThePatient()
     {
-        StartCoroutine(WavingThePatient());
+        anim.Play("Waving");
+        //StartCoroutine(WavingThePatient());
     }
     IEnumerator WavingThePatient()
     {

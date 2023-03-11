@@ -44,7 +44,7 @@ public class LockPlayerPosition : MonoBehaviour
         {
             //xROriginDynamicMoveProvider.enabled = false;
 
-            StartCoroutine(LockPosition());
+            //StartCoroutine(LockPosition());
             //LockPos();  
         }
     }
@@ -63,13 +63,13 @@ public class LockPlayerPosition : MonoBehaviour
 
     private void Update()
     {
-        if (isLocked)
-        {
-            xROriginDynamicMoveProvider.enabled = false;
-        }
-        else
-        {
-            xROriginDynamicMoveProvider.enabled = true;
-        }
+        //if (isLocked)
+        //{
+        //    xROriginDynamicMoveProvider.enabled = false;
+        //}
+        //else
+        //{
+        //    xROriginDynamicMoveProvider.enabled = true;
+        //}
     }
 }

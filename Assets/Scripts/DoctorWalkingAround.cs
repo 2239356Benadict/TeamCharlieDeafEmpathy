@@ -144,12 +144,12 @@ public class DoctorWalkingAround : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
 
-        if (isGoneBack)
-        {
-            //doctorAnimator.Play("Stand To Sit");
-            doctorAnimation.clip = doctorAnimationClip[7];
-            doctorAnimation.Play();
-        }
+        //if (isGoneBack)
+        //{
+        //    //doctorAnimator.Play("Stand To Sit");
+        //    doctorAnimation.clip = doctorAnimationClip[7];
+        //    doctorAnimation.Play();
+        //}
     }
 
 }

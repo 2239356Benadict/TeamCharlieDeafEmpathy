@@ -1646,6 +1646,7 @@ MonoBehaviour:
   lockingObjectRigidBody: {fileID: 0}
   xROriginDynamicMoveProvider: {fileID: 0}
   numberOfTimes: 0
+  isLocked: 0
   docWalkAround: {fileID: 0}
 --- !u!1 &1862760921359576214 stripped
 GameObject:
