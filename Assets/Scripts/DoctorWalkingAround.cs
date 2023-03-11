@@ -35,7 +35,7 @@ public class DoctorWalkingAround : MonoBehaviour
     public bool canNPCFollow;
     public bool isWaitingForUser;
 
-    public AudioSource whoNext;
+    
 
     void Start()
     {
@@ -48,7 +48,7 @@ public class DoctorWalkingAround : MonoBehaviour
         followDoctorCheckpoint.SetActive(false);
 
         doctorAnimation = gameObject.GetComponent<Animation>();
-        whoNext = gameObject.GetComponent<AudioSource>();
+        
         // invoke the doctors to and fro movement
         InvokeRepeating("WalkAround", 6f, doctorWalkingRepeatTime);
     }
@@ -67,7 +67,7 @@ public class DoctorWalkingAround : MonoBehaviour
 
             followDoctorCheckpoint.SetActive(true);
 
-            whoNext.Play();
+           
         }
         else if (other.tag == "DoctorDesk")
         {
@@ -144,12 +144,6 @@ public class DoctorWalkingAround : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
 
-        //if (isGoneBack)
-        //{
-        //    //doctorAnimator.Play("Stand To Sit");
-        //    doctorAnimation.clip = doctorAnimationClip[7];
-        //    doctorAnimation.Play();
-        //}
     }
 
 }

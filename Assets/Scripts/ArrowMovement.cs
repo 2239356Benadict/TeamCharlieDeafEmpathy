@@ -1,6 +1,6 @@
 // Tested in unity editor and Oculus Quest
 // Copyright (c) TeamCharlie @swanseauniversity. All rights reserved.
-// Dated: 26/01/2023
+// Dated: 13/03/2023
 // This script is used for the to and fro movement of a gameobject.
 
 using System.Collections;

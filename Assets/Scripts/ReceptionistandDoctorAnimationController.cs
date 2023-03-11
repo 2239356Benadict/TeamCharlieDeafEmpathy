@@ -33,7 +33,7 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
     {
         if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 4)
         {
-            WaveToThePatient();
+            //WaveToThePatient();
         }
         else if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 3)
         {
@@ -51,38 +51,13 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         {
             // To enable the player movement
             numberOfTimesDocCame++;
-            if(numberOfTimesDocCame == 3)
+
+            if(numberOfTimesDocCame == 4)
             {
                 playerDynamicMoveProvider.enabled = true;
+                Debug.Log("DynamicMove Enabled");
             }
         }
     }
 
-
-    public void WaveToThePatient()
-    {
-        anim.Play("Waving");
-        //StartCoroutine(WavingThePatient());
-    }
-    IEnumerator WavingThePatient()
-    {
-        yield return new WaitForSeconds(5f);
-        canUserGo = true;
-        yield return new WaitForSeconds(0.5f);
-        canUserGo = false;
-        yield return new WaitForSeconds(2f);
-        canUserGo = true;
-    }
-
-    void WaveToPatient()
-    {
-        if (canUserGo)
-        {
-            anim.Play("Waving");
-        }
-        else
-        {
-            anim.Play("Sit Idle");
-        }
-    }
 }

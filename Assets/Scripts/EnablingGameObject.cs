@@ -24,6 +24,17 @@ public class EnablingGameObject : MonoBehaviour
             {
                 infoPanel.SetActive(true);
             }
+            else
+            {
+                infoPanel.SetActive(false);
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            infoPanel.SetActive(false);
         }
     }
 

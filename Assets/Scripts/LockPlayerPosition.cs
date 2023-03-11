@@ -22,7 +22,6 @@ public class LockPlayerPosition : MonoBehaviour
 
     public bool isLocked;
 
-    public DoctorWalkingAround docWalkAround;
 
     private void Start()
     {
@@ -42,10 +41,8 @@ public class LockPlayerPosition : MonoBehaviour
 
         if (numberOfTimes == 2 && other.CompareTag("Player") && nPCToGo < 4)
         {
-            //xROriginDynamicMoveProvider.enabled = false;
-
-            //StartCoroutine(LockPosition());
-            //LockPos();  
+            xROriginDynamicMoveProvider.enabled = false;
+            Debug.Log("Player is freezed"); 
         }
     }
 
