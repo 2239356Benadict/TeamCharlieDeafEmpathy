@@ -12,14 +12,22 @@ public class FreezeTheUser : MonoBehaviour
     {
         moveProvider = gameObject.GetComponent<DynamicMoveProvider>();
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.tag == "FinalDestination")
         {
-            moveProvider.enabled = false;
-            Debug.Log("Player reached final destination");
+            StartCoroutine(ReachedFinalDestination());
+            //moveProvider.enabled = false;
+            //Debug.Log("Player reached final destination");
         }
     }
 
-
+    private IEnumerator ReachedFinalDestination()
+    {
+        yield return new WaitForSeconds(2f);
+        
+        moveProvider.enabled = false;
+        Debug.Log("Player reached final destination");
+        
+    }
 }

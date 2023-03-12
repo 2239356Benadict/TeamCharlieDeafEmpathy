@@ -7,7 +7,8 @@ public class EndGameButton : MonoBehaviour
 {
     public void EndGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); 
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); 
+        Application.Quit();
     }
 
 }

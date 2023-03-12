@@ -20,15 +20,20 @@ public class LockPlayerPosition : MonoBehaviour
     private int numberOfTimes;
     private int nPCToGo;
 
-    public bool isLocked;
+    public AudioSource audio;
+    //public bool isLocked;
 
-
-    private void Start()
+    private void Awake()
     {
         gameObjectToLock = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Start()
+    {     
         lockingObjectRigidBody = gameObjectToLock.GetComponent<Rigidbody>();
+        //xROriginDynamicMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<DynamicMoveProvider>();        
         xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
-        
+        audio = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,16 +41,23 @@ public class LockPlayerPosition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             numberOfTimes++;
-            
+            //xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
         }
 
-        if (numberOfTimes == 2 && other.CompareTag("Player") && nPCToGo < 4)
+        if (numberOfTimes == 2 && other.CompareTag("Player")) // && nPCToGo < 4)
         {
             xROriginDynamicMoveProvider.enabled = false;
             Debug.Log("Player is freezed"); 
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            audio.enabled = false;
+        }
+    }
     public void LockPos()
     {
         //lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
@@ -58,15 +70,4 @@ public class LockPlayerPosition : MonoBehaviour
         xROriginDynamicMoveProvider.enabled = true;
     }
 
-    private void Update()
-    {
-        //if (isLocked)
-        //{
-        //    xROriginDynamicMoveProvider.enabled = false;
-        //}
-        //else
-        //{
-        //    xROriginDynamicMoveProvider.enabled = true;
-        //}
-    }
 }

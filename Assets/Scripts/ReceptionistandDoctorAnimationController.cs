@@ -19,13 +19,18 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
     public DynamicMoveProvider playerDynamicMoveProvider;
 
     public int numberOfTimesDocCame;
+
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     void Start()
     {
         anim = GetComponent<Animator>();
         npcCollider = GetComponent<BoxCollider>();
         npcCollider.isTrigger = true;
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerDynamicMoveProvider = player.GetComponent<DynamicMoveProvider>();
+        
+        playerDynamicMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<DynamicMoveProvider>();
     }
 
 
@@ -35,10 +40,10 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         {
             //WaveToThePatient();
         }
-        else if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 3)
-        {
-            playerPosition.isLocked = false;
-        }
+        //else if (other.CompareTag("Doctor") && doctorWalkingAroundScript.numberOfNPCDone == 3)
+        //{
+        //    //playerPosition.isLocked = false;
+        //}
         else if (other.CompareTag("Player"))
         {
             callingAudio.Play();
@@ -52,12 +57,21 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
             // To enable the player movement
             numberOfTimesDocCame++;
 
-            if(numberOfTimesDocCame == 4)
-            {
-                playerDynamicMoveProvider.enabled = true;
-                Debug.Log("DynamicMove Enabled");
-            }
+            
         }
     }
 
+    private void Update()
+    {
+        UnFreezePlayer();
+    }
+
+    private void UnFreezePlayer()
+    {
+        if (numberOfTimesDocCame == 4)
+        {
+            //playerDynamicMoveProvider.enabled = true;
+            Debug.Log("DynamicMove Enabled");
+        }
+    }
 }

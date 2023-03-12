@@ -39,15 +39,9 @@ public class SoundTriggerScript : MonoBehaviour
         {
             timesPlayerEneteredSeat++;
             StartCoroutine(PlayAudioOneTime(0));
-            //Rigidbody otherGORigidBody = other.GetComponent<Rigidbody>();
-            //Debug.Log("Rigid Body Name: " + otherGORigidBody.name);
+            
             Debug.Log(timesPlayerEneteredSeat);
-            //if (timesPlayerEneteredSeat == 2)
-            //{
-            //    otherGORigidBody.constraints = RigidbodyConstraints.FreezeAll;
-            //    otherGORigidBody.velocity = Vector3.zero;
-            //    otherGORigidBody.velocity = Vector3.zero;
-            //}
+            
         }
     }
 

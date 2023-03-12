@@ -18,7 +18,7 @@ public class FinalScenario : MonoBehaviour
         endPanel.SetActive(false);
         npcToStandBehind.SetActive(false);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -26,7 +26,6 @@ public class FinalScenario : MonoBehaviour
             StartCoroutine(EnableNPC());
         }
     }
-
     public void EnableTheUI()
     {
         endPanel.SetActive(true);
@@ -34,7 +33,7 @@ public class FinalScenario : MonoBehaviour
 
     public IEnumerator EnableNPC()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         npcToStandBehind.SetActive(true);
     }
 }

@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private DoctorWalkingAround doctor;
+    public ReceptionistandDoctorAnimationController receptionistandDocAnimatorController;
 
     public FollowThePath npcToFollowPlayer;
 
@@ -37,11 +38,11 @@ public class GameManager : MonoBehaviour
             //nPCToMove++;
             NPCWalkingController();
         }
-        else if(other.tag == "Player")
-        {
-            // NPC follow the player and stand behind the player
-            //npcToFollowPlayer.startFollowing = true;
-        }
+        //else if(other.tag == "Player")
+        //{
+        //    // NPC follow the player and stand behind the player
+        //    //npcToFollowPlayer.startFollowing = true;
+        //}
     }
     public void NPCWalkingController()
     {
@@ -72,16 +73,8 @@ public class GameManager : MonoBehaviour
     {
         if (doctor.isWaitingForUser)
         {
-            receptionistStandUp.Play("Sit To Stand");
-            if (!doctor.doctorAnimation.isPlaying)
-            {
-                wave = true;
-            }
-            else if (wave)
-            {
-                receptionistStandUp.Play("Waving");
-
-            }
+            receptionistStandUp.Play("Waving");
+            receptionistandDocAnimatorController.playerDynamicMoveProvider.enabled = true;
         }
     }
 }

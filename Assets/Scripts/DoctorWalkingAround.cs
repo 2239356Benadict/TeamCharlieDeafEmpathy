@@ -111,7 +111,7 @@ public class DoctorWalkingAround : MonoBehaviour
             duplicateDoc.SetActive(true);
 
             Destroy(gameObject);
-            doctorAnimator.Play("Stand To Sit");
+            //doctorAnimator.Play("Stand To Sit");
         }
     }
     

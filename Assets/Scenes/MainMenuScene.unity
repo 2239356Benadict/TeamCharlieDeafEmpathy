@@ -1269,7 +1269,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 741687282}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687284}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9ac216f0eb04754b1d938aac6380b31, type: 3}
@@ -1946,20 +1946,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440588369}
   m_CullTransparentMesh: 1
---- !u!114 &448913260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350a527bdea67a14fa94f7d4a71ce857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handController: {fileID: 0}
-  handScript: {fileID: 741687290}
 --- !u!1 &453099479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,76 +3259,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 741687282}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &741687284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1727531425, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &741687285 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8065619311903405793, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &741687286 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3622348203531564577, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &741687287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3635982315869015929, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &741687288 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8060993490822369209, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &741687289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 158976350, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 741687282}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &741687290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f22ba68f9389ef4bb1ac83cbadef7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handAnimator: {fileID: 741687285}
-  animParamenterNameGrip: Grip
-  animParamenterNameTrigger: Trigger
-  speed: 0
-  triggerButtonPressed: 0
---- !u!114 &741687291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f22ba68f9389ef4bb1ac83cbadef7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handAnimator: {fileID: 741687288}
-  animParamenterNameGrip: Grip
-  animParamenterNameTrigger: Trigger
-  speed: 0
-  triggerButtonPressed: 0
 --- !u!1 &745609351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,26 +3639,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 741687282}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687289}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9ac216f0eb04754b1d938aac6380b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &810281881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741687289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350a527bdea67a14fa94f7d4a71ce857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handController: {fileID: 0}
-  handScript: {fileID: 741687291}
 --- !u!1 &818004163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,11 +5889,11 @@ RectTransform:
   m_Father: {fileID: 1927802104}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1195565085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6620,6 +6522,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1230202869}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 927818245}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9921,7 +9835,7 @@ GameObject:
   - component: {fileID: 1802080224}
   m_Layer: 0
   m_Name: XR RIG
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10566,7 +10480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: test
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10599,7 +10513,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
