@@ -1,7 +1,7 @@
 ///Copywrite @ 2239356@swansea university
 ///Date:05/03/2023
 ///Author: Benadict Joseph
-///This scripts helps the user in managing the NPCs.
+///This script helps the user in managing the NPCs, controles player movement.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -43,10 +43,14 @@ public class GameManager : MonoBehaviour
         }
         //else if(other.tag == "Player")
         //{
-        //    // NPC follow the player and stand behind the player
+        //    
         //    //npcToFollowPlayer.startFollowing = true;
         //}
     }
+
+    /// <summary>
+    /// Method helps to make the NPCs in the array to follow the doctor one by one
+    /// </summary>
     public void NPCWalkingController()
     {
         if (doctor.canNPCFollow && nPCToMove <= patientsArray.Length)
@@ -71,16 +75,18 @@ public class GameManager : MonoBehaviour
         ReceptionistWaveToLobby();
     }
 
-    public bool wave;
+    /// <summary>
+    ///  Methods to control player movement.
+    /// </summary>
     public void ReceptionistWaveToLobby()
     {
         if (doctor.isWaitingForUser)
         {
             receptionistStandUp.Play("Waving");
             receptionistandDocAnimatorController.playerDynamicMoveProvider.enabled = true; // enabling movement of player
-            receptionistandDocAnimatorController.playerTeleportMoveProvider.enabled = true;
+            receptionistandDocAnimatorController.playerTeleportMoveProvider.enabled = true; // enable the teleportation functionality
             initialPlayerRestrictedArea.SetActive(false);
-            playerInitialTeleportRestrictedArea.enabled = true;
+            playerInitialTeleportRestrictedArea.enabled = true; // restricts the player to move beyoud a line
         }
     }
 }

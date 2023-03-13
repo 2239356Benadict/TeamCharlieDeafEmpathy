@@ -1,7 +1,7 @@
 ///Copywrite @ 2239356@swansea university
 ///Date:05/03/2023
 ///Author: Benadict Joseph
-///This scripts helps the NPC to follow the gameobject attached with DoctorWalkingAround script.
+///This script helps the NPC to follow the gameobject attached with DoctorWalkingAround script.
 
 using System.Collections;
 using System.Collections.Generic;

@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps to lock the player movement once the collided with the gameobject with tis script.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

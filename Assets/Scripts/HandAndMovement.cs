@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This script helps to store the choices made by user for dominant hand and movement type.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,13 +19,6 @@ public class HandAndMovement : MonoBehaviour
 
     public ActionBasedControllerManager leftHandControllerManager;
     public ActionBasedControllerManager rightHandControllerManager;
-
-
-
-    private void Start()
-    {
-        
-    }
     
 
     public void Lefthander()

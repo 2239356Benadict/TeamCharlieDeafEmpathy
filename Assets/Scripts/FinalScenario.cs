@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This script helps to enable gameobjects required for proper ending of the application.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

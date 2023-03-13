@@ -65,9 +65,7 @@ public class DoctorWalkingAround : MonoBehaviour
             
             doctorAnimator.Play("Talking");
 
-            followDoctorCheckpoint.SetActive(true);
-
-           
+            followDoctorCheckpoint.SetActive(true);         
         }
         else if (other.tag == "DoctorDesk")
         {
@@ -111,7 +109,6 @@ public class DoctorWalkingAround : MonoBehaviour
             duplicateDoc.SetActive(true);
 
             Destroy(gameObject);
-            //doctorAnimator.Play("Stand To Sit");
         }
     }
     

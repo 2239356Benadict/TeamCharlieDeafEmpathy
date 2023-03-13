@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps to enable game objects while the gameobject with tag name 'Player' collides with its collider.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,8 +42,4 @@ public class EnablingGameObject : MonoBehaviour
         }
     }
 
-    IEnumerator EnableThePanel()
-    {
-        return null; 
-    }
 }

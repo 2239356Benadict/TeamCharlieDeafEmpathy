@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This script helps the NPC to follow the doctor.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -84,18 +88,6 @@ public class FollowTheDoctor : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Once the health reaches the zero a death animation will play
-    /// </summary>
-    //void ManikinDeathAnimationTransition()
-    //{
-    //    if (_manikinHealth.manikinTotalHealthLeft == 0f)
-    //    {
-    //        // playing animation DeathRight
-    //        avatarAnimator.Play("DeathRight");
-
-    //    }
-    //}
 
     /// <summary>
     /// Method for the Manikin to follow the XR_Rig (Player) using Raycast and calculating distance between Player and Manikin.
@@ -131,40 +123,6 @@ public class FollowTheDoctor : MonoBehaviour
             }
         }
     }
-
-
-
-    /// <summary>
-    /// While entering the helicopter area the manikins will walk towards the their seat 
-    /// </summary>
-    //public void EnetredHelicopterArea()
-    //{
-    //    // Checking whether the raycast hit properly to thr target object, i.e Player.
-    //    Debug.DrawRay(transform.position, transform.forward, Color.blue, 20f);
-
-    //    if (transform.position != seatPosition.transform.position && enteredSafeArea == true)
-    //    {
-    //        _speed = 0.01f;
-
-    //        isGathered = false;
-    //        transform.LookAt(seatPosition.transform);
-    //        // entering helicopter 
-    //        transform.position = Vector3.MoveTowards(transform.position, seatPosition.transform.position, _speed);
-    //        avatarAnimator.Play("Walking"); // playing walking animation
-
-    //    }
-
-    //    if (transform.position == seatPosition.transform.position)
-    //    {
-    //        // rotating manikin at seat position
-    //        transform.rotation = Quaternion.Euler(0f, 5f, 0f);
-    //        avatarAnimator.Play("StandToSit"); // playing sit animation
-    //        //making manikin as a child of seatposition
-    //        transform.parent = seatPosition.transform;
-    //    }
-
-
-    //}
 
     #endregion
 }

@@ -1,7 +1,7 @@
 ///Copywrite @ '2239356@swansea university'
 ///Date:05/03/2023
 ///Author: Benadict Joseph
-///This scripts helps to freeze the movement of the gameobject attached with this script.
+///This script helps to freeze the movement of the gameobject attached with this script.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -65,10 +65,7 @@ public class LockPlayerPosition : MonoBehaviour
             audio.enabled = false;
         }
     }
-    public void LockPos()
-    {
-        //lockingObjectRigidBody.constraints = RigidbodyConstraints.FreezePosition;
-    }
+    
 
     private IEnumerator LockPosition()
     {

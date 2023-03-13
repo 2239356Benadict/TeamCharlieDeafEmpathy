@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This script helps to lock the position of player. This script has to be attached to player to work.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

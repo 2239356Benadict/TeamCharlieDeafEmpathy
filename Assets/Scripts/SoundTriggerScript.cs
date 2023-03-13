@@ -1,7 +1,7 @@
 ///Copywrite @ 2239356@swansea university
 ///Date:05/03/2023
 ///Author: Benadict Joseph
-///This scripts helps to play the audio while colliding with other gameobjects.
+///This script helps to play the audio while colliding with other gameobjects.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -87,7 +87,11 @@ public class SoundTriggerScript : MonoBehaviour
             audiosource.PlayOneShot(audioClip[0]);
         }
     }
-
+    /// <summary>
+    /// Plays only one audio at a time
+    /// </summary>
+    /// <param name="audioNumber"></param>
+    /// <returns></returns>
     IEnumerator PlayAudioOneTime(int audioNumber)
     {
         audiosource.PlayOneShot(audioClip[audioNumber]);

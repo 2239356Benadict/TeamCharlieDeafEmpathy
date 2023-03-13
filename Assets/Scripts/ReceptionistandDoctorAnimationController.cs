@@ -1,3 +1,8 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This scripts helps the play animation, audio and to get the teleport and dynamic move provider.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,23 +63,8 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         else if (other.CompareTag("Doctor"))
         {
             // To enable the player movement
-            numberOfTimesDocCame++;
-
-            
+            numberOfTimesDocCame++;            
         }
     }
-
-    private void Update()
-    {
-        UnFreezePlayer();
-    }
-
-    private void UnFreezePlayer()
-    {
-        if (numberOfTimesDocCame == 4)
-        {
-            //playerDynamicMoveProvider.enabled = true;
-            Debug.Log("DynamicMove Enabled");
-        }
-    }
+    
 }

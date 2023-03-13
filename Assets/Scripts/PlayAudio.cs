@@ -15,7 +15,7 @@ public class PlayAudio : MonoBehaviour
         {
             numberOfTimesCollided++;
         }
-        if(numberOfTimesCollided >= 2)
+        if(numberOfTimesCollided >= 2 && other.CompareTag("Doctor"))
         {
             audioSourceToPlay.Play();
         }

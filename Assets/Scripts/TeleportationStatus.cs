@@ -1,3 +1,7 @@
+///Copywrite @ 2239356@swansea university
+///Date:05/03/2023
+///Author: Benadict Joseph
+///This script helps to enable the teleportation from the hand choice of the user.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +31,9 @@ public class TeleportationStatus : MonoBehaviour
         Debug.Log("XR RayInteractor Choice");
     }
 
+    /// <summary>
+    /// Enable or disable left hand teleport functionality
+    /// </summary>
     public void LeftXRTeleportRayEnableOrDisable()
     {
         if (rigStatus.isLeftDominantHand && gameObject.tag == "LeftTeleportInteractor")
@@ -40,7 +47,9 @@ public class TeleportationStatus : MonoBehaviour
             Debug.Log("Left XR RayInteractor disabled");
         }
     }
-
+    /// <summary>
+    /// Enable or disable right hand teleport functionality
+    /// </summary>
     public void RightXRTeleportRayEnableOrDisable()
     {
         if (rigStatus.isRightDominantHand && gameObject.tag == "RightTeleportInteractor")
