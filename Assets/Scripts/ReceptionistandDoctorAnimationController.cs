@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(BoxCollider))]
 public class ReceptionistandDoctorAnimationController : MonoBehaviour
@@ -17,6 +18,7 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
 
     public GameObject player;
     public DynamicMoveProvider playerDynamicMoveProvider;
+    public TeleportationProvider playerTeleportMoveProvider;
 
     public int numberOfTimesDocCame;
 
@@ -31,6 +33,7 @@ public class ReceptionistandDoctorAnimationController : MonoBehaviour
         npcCollider.isTrigger = true;
         
         playerDynamicMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<DynamicMoveProvider>();
+        playerTeleportMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<TeleportationProvider>();
     }
 
 

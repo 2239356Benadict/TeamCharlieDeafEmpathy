@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LockPlayerPosition : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class LockPlayerPosition : MonoBehaviour
     private Rigidbody lockingObjectRigidBody;
     [SerializeField]
     private DynamicMoveProvider xROriginDynamicMoveProvider;
+    [SerializeField]
+    private TeleportationProvider xROriginTeleportMoveProvider;
+    public TeleportationArea teleportAreaHospital;
     [SerializeField]
     private int numberOfTimes;
     private int nPCToGo;
@@ -33,6 +37,7 @@ public class LockPlayerPosition : MonoBehaviour
         lockingObjectRigidBody = gameObjectToLock.GetComponent<Rigidbody>();
         //xROriginDynamicMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<DynamicMoveProvider>();        
         xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
+        xROriginTeleportMoveProvider = gameObjectToLock.GetComponent<TeleportationProvider>();
         audio = gameObject.GetComponent<AudioSource>();
     }
 
@@ -47,6 +52,8 @@ public class LockPlayerPosition : MonoBehaviour
         if (numberOfTimes == 2 && other.CompareTag("Player")) // && nPCToGo < 4)
         {
             xROriginDynamicMoveProvider.enabled = false;
+            xROriginTeleportMoveProvider.enabled = false;
+            teleportAreaHospital.enabled = false;
             Debug.Log("Player is freezed"); 
         }
     }

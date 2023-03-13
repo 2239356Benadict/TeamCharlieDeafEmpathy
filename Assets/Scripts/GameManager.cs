@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject doctorPassCheckpoint;
 
     public GameObject receptionistToStandUp;
+    public GameObject initialPlayerRestrictedArea;
+    public TeleportationArea playerInitialTeleportRestrictedArea;
     public Animator receptionistStandUp;
     
     public GameObject[] patientsArray;
@@ -74,7 +77,10 @@ public class GameManager : MonoBehaviour
         if (doctor.isWaitingForUser)
         {
             receptionistStandUp.Play("Waving");
-            receptionistandDocAnimatorController.playerDynamicMoveProvider.enabled = true;
+            receptionistandDocAnimatorController.playerDynamicMoveProvider.enabled = true; // enabling movement of player
+            receptionistandDocAnimatorController.playerTeleportMoveProvider.enabled = true;
+            initialPlayerRestrictedArea.SetActive(false);
+            playerInitialTeleportRestrictedArea.enabled = true;
         }
     }
 }
