@@ -8,6 +8,9 @@ HearUs enhance the users empathy through showing the struggles and anxiety deaf 
 
 ![alt text](https://github.com/2239356Benadict/Assignment1/blob/main/Doc.png)
 
+### Video
+[<img src="https://github.com/2239356Benadict/Assignment1/blob/main/P1%20View.png" width="1000" height="" />](https://youtu.be/DCJpuyLStBI)
+
 ### Main Challenges Demonstrated 
 1.	Interactions with receptionists without interpreter.
 2.	The anxiety level of the deaf patients in the waiting room
