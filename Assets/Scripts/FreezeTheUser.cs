@@ -14,7 +14,7 @@ public class FreezeTheUser : MonoBehaviour
     public TeleportationProvider teleportProviderfinal;
 
     public int timesColliedeWithChair;
-
+    public bool isReadyToLock;
     private void Start()
     {
         moveProvider = gameObject.GetComponent<DynamicMoveProvider>();
@@ -26,6 +26,12 @@ public class FreezeTheUser : MonoBehaviour
         if (other.CompareTag("VacantChair"))
         {
             timesColliedeWithChair++;
+        }
+
+        if(other.tag == "ReceptionArea")
+        {
+            isReadyToLock = true;
+            Debug.Log("At reception area");
         }
     }
     private void OnTriggerStay(Collider other)

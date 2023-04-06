@@ -19,7 +19,10 @@ public class LockPlayerPosition : MonoBehaviour
     private DynamicMoveProvider xROriginDynamicMoveProvider;
     [SerializeField]
     private TeleportationProvider xROriginTeleportMoveProvider;
+    [SerializeField]
+    private FreezeTheUser freeze;
     public TeleportationArea teleportAreaHospital;
+    
     [SerializeField]
     private int numberOfTimes;
     private int nPCToGo;
@@ -38,6 +41,7 @@ public class LockPlayerPosition : MonoBehaviour
         //xROriginDynamicMoveProvider = GameObject.FindGameObjectWithTag("Player").GetComponent<DynamicMoveProvider>();        
         xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
         xROriginTeleportMoveProvider = gameObjectToLock.GetComponent<TeleportationProvider>();
+        freeze = gameObjectToLock.GetComponent<FreezeTheUser>();
         audio = gameObject.GetComponent<AudioSource>();
     }
 
@@ -49,7 +53,7 @@ public class LockPlayerPosition : MonoBehaviour
             //xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
         }
 
-        if (numberOfTimes == 2 && other.CompareTag("Player")) // && nPCToGo < 4)
+        if (freeze.isReadyToLock && other.CompareTag("Player")) // && nPCToGo < 4)
         {
             xROriginDynamicMoveProvider.enabled = false;
             xROriginTeleportMoveProvider.enabled = false;
