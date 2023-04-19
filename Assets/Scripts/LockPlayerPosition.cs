@@ -53,7 +53,7 @@ public class LockPlayerPosition : MonoBehaviour
             //xROriginDynamicMoveProvider = gameObjectToLock.GetComponent<DynamicMoveProvider>();
         }
 
-        if (freeze.isReadyToLock && other.CompareTag("Player")) // && nPCToGo < 4)
+        if (freeze.isReadyToLock && other.CompareTag("Player"))
         {
             xROriginDynamicMoveProvider.enabled = false;
             xROriginTeleportMoveProvider.enabled = false;

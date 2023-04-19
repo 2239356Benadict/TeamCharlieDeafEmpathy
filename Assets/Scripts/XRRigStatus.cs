@@ -26,6 +26,7 @@ public class XRRigStatus : MonoBehaviour
 
     private void Start()
     {
+        xRRigStatus.IsTeleportMovementSelected();
         ActivateOrDeactiveteTeleportArea();
     }
 

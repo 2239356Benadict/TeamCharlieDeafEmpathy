@@ -14,14 +14,14 @@ public class DoctorandPatientAnimatorScript : MonoBehaviour
         DoctorsRoomCollider = gameObject.GetComponent<BoxCollider>();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            anim.Play("Typing");
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        anim.Play("Typing");
 
-            //anim.Play("Seated Idle");
-        }
-    }
+    //        //anim.Play("Seated Idle");
+    //    }
+    //}
 }
 
